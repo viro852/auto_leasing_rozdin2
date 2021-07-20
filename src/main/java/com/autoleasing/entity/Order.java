@@ -1,6 +1,6 @@
 package com.autoleasing.entity;
 
-import com.autoleasing.enums.StatusEnum;
+import com.autoleasing.enums.OrderStatus;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -15,17 +15,20 @@ public class Order {
     @Column(name = "order_id")
     private Integer id;
 
-
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+    @OneToOne
+    @JoinColumn(name = "car_id")
+    private Car car;
 
     @Column(name = "commentary")
     private String commentary;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "status")
-    private StatusEnum statusEnum;
+    private OrderStatus orderStatus;
 
     @Column(name = "date_of_rent")
     private LocalDate dateOfRent;
@@ -33,10 +36,10 @@ public class Order {
     public Order() {
     }
 
-    public Order(User userId, String commentary, StatusEnum statusEnum, LocalDate dateOfRent) {
-        this.user = userId;
+    public Order(User user, String commentary, OrderStatus orderStatus, LocalDate dateOfRent) {
+        this.user = user;
         this.commentary = commentary;
-        this.statusEnum = statusEnum;
+        this.orderStatus = orderStatus;
         this.dateOfRent = dateOfRent;
     }
 
@@ -48,11 +51,11 @@ public class Order {
         this.id = id;
     }
 
-    public User getUserId() {
+    public User getUser() {
         return user;
     }
 
-    public void setUserId(User userId) {
+    public void setUser(User userId) {
         this.user = userId;
     }
 
@@ -64,12 +67,12 @@ public class Order {
         this.commentary = commentary;
     }
 
-    public StatusEnum getStatusEnum() {
-        return statusEnum;
+    public OrderStatus getOrderStatus() {
+        return orderStatus;
     }
 
-    public void setStatusEnum(StatusEnum statusEnum) {
-        this.statusEnum = statusEnum;
+    public void setOrderStatus(OrderStatus orderStatus) {
+        this.orderStatus = orderStatus;
     }
 
     public LocalDate getDateOfRent() {
@@ -80,17 +83,25 @@ public class Order {
         this.dateOfRent = dateOfRent;
     }
 
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Order order = (Order) o;
-        return id == order.id && Objects.equals(user, order.user) && Objects.equals(commentary, order.commentary) && statusEnum == order.statusEnum && Objects.equals(dateOfRent, order.dateOfRent);
+        return id == order.id && Objects.equals(user, order.user) && Objects.equals(commentary, order.commentary) && orderStatus == order.orderStatus && Objects.equals(dateOfRent, order.dateOfRent);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, user, commentary, statusEnum, dateOfRent);
+        return Objects.hash(id, user, commentary, orderStatus, dateOfRent);
     }
 
     @Override
@@ -99,7 +110,7 @@ public class Order {
                 "id=" + id +
                 ", userId=" + user +
                 ", commentary='" + commentary + '\'' +
-                ", statusEnum=" + statusEnum +
+                ", orderStatus=" + orderStatus +
                 ", dateOfRent=" + dateOfRent +
                 '}';
     }
