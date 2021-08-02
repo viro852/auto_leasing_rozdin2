@@ -6,7 +6,7 @@ import com.autoleasing.exception.ValidationException;
 
 public interface UserService {
 
-    public UserDto saveNewUser(UserDto userDto) throws ValidationException;
+     UserDto saveNewUser(UserDto userDto) throws ValidationException;
 
-    public UserDto getUserById(Integer id) throws EntityNotFoundException, ValidationException;
+     UserDto getUserById(Integer id) throws EntityNotFoundException, ValidationException;
 }

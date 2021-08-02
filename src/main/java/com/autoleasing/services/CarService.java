@@ -9,13 +9,13 @@ import java.util.List;
 
 public interface CarService {
 
-    public CarDto saveNewCar(CarDto carDto) throws ValidationException;
+     CarDto saveNewCar(CarDto carDto) throws ValidationException;
 
-    public List<Car> getAllCarsList();
+     List<Car> getAllCarsList();
 
-    public void deleteCar(Integer id);
+     void deleteCar(Integer id);
 
-    public CarDto updateCar(CarDto carDto) throws EntityNotFoundException, ValidationException;
+     CarDto updateCar(CarDto carDto) throws EntityNotFoundException, ValidationException;
 
-    public CarDto getCarById(Integer id) throws EntityNotFoundException, ValidationException;
+     CarDto getCarById(Integer id) throws EntityNotFoundException, ValidationException;
 }

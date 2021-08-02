@@ -10,13 +10,13 @@ import static java.util.Objects.isNull;
 public class UserValidation {
 
     public void validateUserDto(UserDto userDto) throws ValidationException {
-
+        if (isNull(userDto)) {
+            throw new ValidationException("Object User is null");
+        }
         if (isNull(userDto.getId()) || userDto.getId() <= 0) {
             throw new ValidationException("Non valid id");
         }
-        if (isNull(userDto)) {
-            throw new ValidationException("Object User is null");
-        }if (isNull(userDto.getName()) || userDto.getName().isEmpty()) {
+        if (isNull(userDto.getName()) || userDto.getName().isEmpty()) {
             throw new ValidationException("Name is empty");
         }
         if (isNull(userDto.getLastName()) || userDto.getLastName().isEmpty()) {

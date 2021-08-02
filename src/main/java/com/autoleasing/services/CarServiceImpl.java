@@ -5,8 +5,6 @@ import com.autoleasing.entity.Car;
 import com.autoleasing.exception.EntityNotFoundException;
 import com.autoleasing.exception.ValidationException;
 import com.autoleasing.repository.CarRepo;
-import com.autoleasing.repository.OrderRepo;
-import com.autoleasing.repository.UserRepo;
 import com.autoleasing.validation.CarIdValidation;
 import com.autoleasing.validation.CarValidation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,19 +22,19 @@ public class CarServiceImpl implements CarService {
 
 
     @Autowired
-    public CarServiceImpl(CarRepo carRepo, CarConverter carConverter, CarValidation carValidation, UserRepo userRepo, OrderRepo orderRepo,CarIdValidation carIdValidation) {
+    public CarServiceImpl(CarRepo carRepo, CarConverter carConverter, CarValidation carValidation, CarIdValidation carIdValidation) {
         this.carRepo = carRepo;
         this.carConverter = carConverter;
         this.carValidation = carValidation;
-        this.carValidation = carValidation;
+        this.carIdValidation = carIdValidation;
 
     }
 
     @Override
     public CarDto saveNewCar(CarDto carDto) throws ValidationException {
         carValidation.validateCarDto(carDto);
-        Car carForSave = carConverter.fromCarDtoToCar(carDto);
-        return carConverter.fromCarToCarDto(carRepo.save(carForSave));
+        Car carForSave = carRepo.save(carConverter.fromCarDtoToCar(carDto));
+        return carConverter.fromCarToCarDto(carForSave);
     }
 
     @Override
@@ -53,9 +51,7 @@ public class CarServiceImpl implements CarService {
     public CarDto updateCar(CarDto carDto) throws EntityNotFoundException, ValidationException {
 
         carValidation.validateCarDto(carDto);
-        Car carFromDB = carRepo.findById(carDto.getId()).orElseThrow(() -> {
-            return new EntityNotFoundException("Car not found");
-        });
+        Car carFromDB = carRepo.findById(carDto.getId()).orElseThrow(() -> new EntityNotFoundException("Car not found"));
 
         carFromDB.setBrand(carDto.getBrand());
         carFromDB.setModel(carDto.getModel());
@@ -72,10 +68,8 @@ public class CarServiceImpl implements CarService {
 
         carIdValidation.carIdValidateMethod(carId);
 
-        CarDto carDto = null;
-        Car car = carRepo.findById(carId).orElseThrow(() -> {
-            return new EntityNotFoundException("Car not found");
-        });
+        CarDto carDto;
+        Car car = carRepo.findById(carId).orElseThrow(() -> new EntityNotFoundException("Car not found"));
         carDto = carConverter.fromCarToCarDto(car);
         return carDto;
     }

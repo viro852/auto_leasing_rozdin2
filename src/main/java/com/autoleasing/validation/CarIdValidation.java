@@ -9,8 +9,12 @@ import static java.util.Objects.isNull;
 public class CarIdValidation {
 
     public void carIdValidateMethod(Integer carId) throws ValidationException {
-        if (isNull(carId) || carId <= 0) {
+        if (isNull(carId)) {
             throw new ValidationException("Non valid carId");
         }
+        if (carId <= 0) {
+            throw new ValidationException("Non valid carId");
+        }
+
     }
 }

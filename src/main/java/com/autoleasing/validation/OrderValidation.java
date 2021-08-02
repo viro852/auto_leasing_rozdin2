@@ -10,7 +10,6 @@ import static java.util.Objects.isNull;
 public class OrderValidation {
 
     public void validateOrderDto(OrderDto orderDto) throws ValidationException {
-
         if (isNull(orderDto)) {
             throw new ValidationException("Order is null");
         }

@@ -19,14 +19,14 @@ import java.time.LocalDate;
 @Service
 public class OrderServiceImpl implements OrderService {
 
-    private OrderRepo orderRepo;
-    private CarService carService;
-    private UserService userService;
-    private OrderValidation orderValidation;
-    private UsersConverter usersConverter;
-    private CarConverter carConverter;
-    private CarIdValidation carIdValidation;
-    private UserIdValidation userIdValidation;
+    private final OrderRepo orderRepo;
+    private final CarService carService;
+    private final UserService userService;
+    private final OrderValidation orderValidation;
+    private final UsersConverter usersConverter;
+    private final CarConverter carConverter;
+    private final CarIdValidation carIdValidation;
+    private final UserIdValidation userIdValidation;
 
     @Autowired
     public OrderServiceImpl(OrderRepo orderRepo, CarService carService, UserService userService, OrderValidation orderValidation,UsersConverter usersConverter,CarConverter carConverter,CarIdValidation carIdValidation,UserIdValidation userIdValidation) {
@@ -50,7 +50,7 @@ public class OrderServiceImpl implements OrderService {
 
         Order order = new Order();
 
-        if (car.isAvailable() == false) {
+        if (car.isAvailable()) {
             car.setAvailable(true);
         }
         order.setUser(user);
@@ -63,7 +63,6 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public void updateOrder(OrderDto orderDto) throws EntityNotFoundException, ValidationException {
-
         orderValidation.validateOrderDto(orderDto);
         Order orderFromDB = orderRepo.findById(orderDto.getId()).orElseThrow(() -> {
             return new EntityNotFoundException("Order not found");

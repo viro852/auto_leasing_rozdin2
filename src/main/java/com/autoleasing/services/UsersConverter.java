@@ -3,9 +3,6 @@ package com.autoleasing.services;
 import com.autoleasing.dto.UserDto;
 import com.autoleasing.entity.Role;
 import com.autoleasing.entity.User;
-import com.autoleasing.exception.ValidationException;
-import com.autoleasing.validation.UserValidation;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.HashSet;
@@ -13,15 +10,7 @@ import java.util.HashSet;
 @Component
 public class UsersConverter {
 
-    private UserValidation userValidation;
-
-    @Autowired
-    public UsersConverter(UserValidation userValidation) {
-        this.userValidation = userValidation;
-    }
-
-    public User fromUserDtoToUser(UserDto userDto) throws ValidationException {
-        userValidation.validateUserDto(userDto);
+    public User fromUserDtoToUser(UserDto userDto)  {
         User user = new User();
         user.setName(userDto.getName());
         user.setLastName(userDto.getLastName());

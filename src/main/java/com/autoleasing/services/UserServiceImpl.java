@@ -35,7 +35,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto getUserById(Integer userId) throws EntityNotFoundException, ValidationException {
-
         userIdValidation.userIdValidateMethod(userId);
 
         UserDto userDto = null;

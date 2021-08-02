@@ -6,7 +6,7 @@ import com.autoleasing.exception.ValidationException;
 
 public interface OrderService {
 
-    public void bookACar(Integer carId, Integer userId, String commentFromUser) throws EntityNotFoundException, ValidationException;
+     void bookACar(Integer carId, Integer userId, String commentFromUser) throws EntityNotFoundException, ValidationException;
 
-    public void updateOrder(OrderDto orderDto) throws EntityNotFoundException, ValidationException;
+     void updateOrder(OrderDto orderDto) throws EntityNotFoundException, ValidationException;
 }

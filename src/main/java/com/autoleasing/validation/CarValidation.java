@@ -10,13 +10,14 @@ import static java.util.Objects.isNull;
 public class CarValidation {
 
     public void validateCarDto(CarDto carDto) throws ValidationException {
+        if (isNull(carDto)) {
+            throw new ValidationException("Object Car is null");
+        }
 
         if (isNull(carDto.getId()) || carDto.getId() <= 0) {
             throw new ValidationException("Non valid id");
         }
-        if (isNull(carDto)) {
-            throw new ValidationException("Object Car is null");
-        }
+
         if (isNull(carDto.getBrand()) || carDto.getBrand().isEmpty()) {
             throw new ValidationException("Brand is empty");
         }

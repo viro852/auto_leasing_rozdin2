@@ -2,23 +2,16 @@ package com.autoleasing.services;
 
 import com.autoleasing.dto.CarDto;
 import com.autoleasing.entity.Car;
-import com.autoleasing.exception.ValidationException;
-import com.autoleasing.validation.CarValidation;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 public class CarConverter {
 
-    private CarValidation carValidation;
 
-    @Autowired
-    public CarConverter(CarValidation carValidation) {
-        this.carValidation = carValidation;
+    public CarConverter() {
     }
 
-    public Car fromCarDtoToCar(CarDto carDto) throws ValidationException {
-        carValidation.validateCarDto(carDto);
+    public Car fromCarDtoToCar(CarDto carDto)  {
         Car car = new Car();
         car.setBrand(carDto.getBrand());
         car.setModel(carDto.getModel());
