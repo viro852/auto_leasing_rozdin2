@@ -1,11 +1,8 @@
 package com.autoleasing.services;
 
 import com.autoleasing.dto.UserDto;
-import com.autoleasing.entity.Role;
 import com.autoleasing.entity.User;
 import org.springframework.stereotype.Component;
-
-import java.util.HashSet;
 
 @Component
 public class UsersConverter {
@@ -17,7 +14,8 @@ public class UsersConverter {
         user.setEmail(userDto.getEmail());
         user.setId(userDto.getId());
         user.setPassword(userDto.getPassword());
-        user.setSetOfRoles((HashSet<Role>) userDto.getSetOfRoles());
+        user.setSetOfRoles(userDto.getSetOfRoles());
+        user.setPhoneNumber(userDto.getPhoneNumber());
         return user;
     }
 
@@ -29,6 +27,7 @@ public class UsersConverter {
         userDto.setEmail(user.getEmail());
         userDto.setPassword(user.getPassword());
         userDto.setSetOfRoles(user.getSetOfRoles());
+        userDto.setPhoneNumber(user.getPhoneNumber());
         return userDto;
     }
 }

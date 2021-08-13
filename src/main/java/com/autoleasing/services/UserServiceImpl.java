@@ -44,4 +44,18 @@ public class UserServiceImpl implements UserService {
         userDto = usersConverter.fromUserToUserDto(user);
         return userDto;
     }
+
+    @Override
+    public User checkUserByEmailAndPass(String email, String password) {
+
+
+        return userRepo.findByEmailAndPassword(email,password).orElse(null);
+    }
+
+    @Override
+    public User checkUserByEmailAndPhoneNumber(String email,String phoneNumber ) {
+        return userRepo.findByEmailOrPhoneNumber(email,phoneNumber).orElse(null);
+    }
+
+
 }

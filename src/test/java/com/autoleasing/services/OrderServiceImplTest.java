@@ -49,7 +49,7 @@ class OrderServiceImplTest {
     void bookACar() throws ValidationException, EntityNotFoundException {
         when(carService.getCarById(uCar().getId())).thenReturn(uCarDto());
         when(userService.getUserById(aUser().getId())).thenReturn(aUserDto());
-        orderService.bookACar(uCar().getId(), aUser().getId(), uOrder().getCommentary());
+        orderService.bookACar(uCar().getId(), aUser().getId(), uOrder().getCommentary(),uOrder().getDateOfRent(),uOrder().getDateOfRentFinish());
 
         Order expectedOrder=uOrder();
         expectedOrder.setId(null);

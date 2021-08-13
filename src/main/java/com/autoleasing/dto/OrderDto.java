@@ -14,16 +14,18 @@ public class OrderDto {
     private String commentary;
     private OrderStatus orderStatus;
     private LocalDate dateOfRent;
+    private LocalDate dateOfRentFinish;
 
     public OrderDto() {
     }
 
-    public OrderDto(User user, Car car, String commentary, OrderStatus orderStatus, LocalDate dateOfRent) {
+    public OrderDto(User user, Car car, String commentary, OrderStatus orderStatus, LocalDate dateOfRent,LocalDate dateOfRentFinish) {
         this.user = user;
         this.car = car;
         this.commentary = commentary;
         this.orderStatus = orderStatus;
         this.dateOfRent = dateOfRent;
+        this.dateOfRentFinish = dateOfRentFinish;
     }
 
     public Integer getId() {
@@ -74,6 +76,14 @@ public class OrderDto {
         this.dateOfRent = dateOfRent;
     }
 
+    public LocalDate getDateOfRentFinish() {
+        return dateOfRentFinish;
+    }
+
+    public void setDateOfRentFinish(LocalDate dateOfRentFinish) {
+        this.dateOfRentFinish = dateOfRentFinish;
+    }
+
     @Override
     public String toString() {
         return "OrderDto{" +
@@ -83,6 +93,7 @@ public class OrderDto {
                 ", commentary='" + commentary + '\'' +
                 ", orderStatus=" + orderStatus +
                 ", dateOfRent=" + dateOfRent +
+                ", dateOfRentFinish=" + dateOfRentFinish +
                 '}';
     }
 }

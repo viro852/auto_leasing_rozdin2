@@ -13,9 +13,6 @@ public class UserValidation {
         if (isNull(userDto)) {
             throw new ValidationException("Object User is null");
         }
-        if (isNull(userDto.getId()) || userDto.getId() <= 0) {
-            throw new ValidationException("Non valid id");
-        }
         if (isNull(userDto.getName()) || userDto.getName().isEmpty()) {
             throw new ValidationException("Name is empty");
         }
@@ -26,7 +23,7 @@ public class UserValidation {
             throw new ValidationException("Email is empty");
         }
         if (isNull(userDto.getSetOfRoles()) || userDto.getSetOfRoles().isEmpty()) {
-            throw new ValidationException("Add roles");
+          throw new ValidationException("Add roles");
         }
         if (isNull(userDto.getPassword()) || userDto.getPassword().isEmpty()) {
             throw new ValidationException("Password is Empty");

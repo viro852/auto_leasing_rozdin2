@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Succes Order</title>
+</head>
+<body>
+<h1>You have successfully booked a car</h1>
+<div>
+    <p th:text="${bookedCarBrand}"></p>
+    <p th:text="${bookedCarModel}"></p>
+    <span th:text="${dateOfStart}"></span>
+    <span th:text="${dateOfFinish}"></span>
+</div>
+<a href="/carList">return to carList</a>
+</body>
+</html>

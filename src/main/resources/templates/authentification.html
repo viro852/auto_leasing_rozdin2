@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/css/project.css" rel="stylesheet">
+</head>
+<body>
+<div class="testbox">
+    <h1>Authentification</h1>
+
+
+
+    <form action="/authentification" method="post" th:object="${user}">
+
+
+
+
+        <input placeholder="Email" th:field="*{email}" type="text">
+
+
+        <input placeholder="password" th:field="*{password}" type="password">
+
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+</body>
+</html>

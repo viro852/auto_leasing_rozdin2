@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/css/project.css" rel="stylesheet">
+</head>
+<body>
+<div class="testbox">
+    <h1>New Order</h1>
+
+    <form action="/createOrder" method="post" th:object="${order}">
+
+        <input name="carModel" th:value="${carModel}" type="text"/>
+
+        <input name="carId" th:value="${car}" type="hidden"/>
+
+        <input name="userId" th:value="${user}" type="hidden"/>
+
+        <input name="start" placeholder="StartDateOfRent" th:field="*{start}" type="text"/>
+
+        <input name="finish" placeholder="FinishDateOfRent" th:field="*{finish}" type="text"/>
+
+        <input name="comment" placeholder="your commentary" th:field="*{comment}" type="text"/>
+        <br>
+        <br>
+        <input type="submit" value="Create Order">
+    </form>
+</div>
+
+</body>
+</html>

@@ -26,7 +26,6 @@ public class Role {
     public Role() {
     }
 
-
     public Role(RoleEnum roleEnum) {
         this.roleEnum = roleEnum;
     }

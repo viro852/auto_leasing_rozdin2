@@ -33,14 +33,18 @@ public class Order {
     @Column(name = "date_of_rent")
     private LocalDate dateOfRent;
 
+    @Column(name = "date_of_rent_finish")
+    private LocalDate dateOfRentFinish;
+
     public Order() {
     }
 
-    public Order(User user, String commentary, OrderStatus orderStatus, LocalDate dateOfRent) {
+    public Order(User user, String commentary, OrderStatus orderStatus, LocalDate dateOfRent, LocalDate dateOfRentFinish) {
         this.user = user;
         this.commentary = commentary;
         this.orderStatus = orderStatus;
         this.dateOfRent = dateOfRent;
+        this.dateOfRentFinish = dateOfRentFinish;
     }
 
     public int getId() {
@@ -83,6 +87,14 @@ public class Order {
         this.dateOfRent = dateOfRent;
     }
 
+    public LocalDate getDateOfRentFinish() {
+        return dateOfRentFinish;
+    }
+
+    public void setDateOfRentFinish(LocalDate dateOfRentFinish) {
+        this.dateOfRentFinish = dateOfRentFinish;
+    }
+
     public Car getCar() {
         return car;
     }
@@ -96,22 +108,24 @@ public class Order {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Order order = (Order) o;
-        return id == order.id && Objects.equals(user, order.user) && Objects.equals(commentary, order.commentary) && orderStatus == order.orderStatus && Objects.equals(dateOfRent, order.dateOfRent);
+        return Objects.equals(id, order.id) && Objects.equals(user, order.user) && Objects.equals(car, order.car) && Objects.equals(commentary, order.commentary) && orderStatus == order.orderStatus && Objects.equals(dateOfRent, order.dateOfRent) && Objects.equals(dateOfRentFinish, order.dateOfRentFinish);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, user, commentary, orderStatus, dateOfRent);
+        return Objects.hash(id, user, car, commentary, orderStatus, dateOfRent, dateOfRentFinish);
     }
 
     @Override
     public String toString() {
         return "Order{" +
                 "id=" + id +
-                ", userId=" + user +
+                ", user=" + user +
+                ", car=" + car +
                 ", commentary='" + commentary + '\'' +
                 ", orderStatus=" + orderStatus +
                 ", dateOfRent=" + dateOfRent +
+                ", dateOfRentFinish=" + dateOfRentFinish +
                 '}';
     }
 }

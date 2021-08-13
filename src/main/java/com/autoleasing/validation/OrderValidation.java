@@ -20,8 +20,13 @@ public class OrderValidation {
             throw new ValidationException("User is empty");
         }
         if (isNull(orderDto.getDateOfRent())){
-            throw new ValidationException("Date of order is empty");
+            throw new ValidationException("Start Date of order is empty");
         }
+
+        if (isNull(orderDto.getDateOfRentFinish())){
+            throw new ValidationException("Finish Date of order is empty");
+        }
+
         if (isNull(orderDto.getOrderStatus())){
             throw new ValidationException("OrderStatus is empty");
         }

@@ -62,7 +62,6 @@ public class CarServiceImpl implements CarService {
         return carConverter.fromCarToCarDto(carRepo.save(carFromDB));
     }
 
-
     @Override
     public CarDto getCarById(Integer carId) throws EntityNotFoundException, ValidationException {
 

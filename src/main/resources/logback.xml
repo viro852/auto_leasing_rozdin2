@@ -1,0 +1,39 @@
+<configuration>
+    <property name="logPattern"
+              value="%d{HH:mm:ss.SSS} [%-22thread] %-5level %logger{36} - %msg%n"/>
+    <property name="logDir"
+              value="logs/"/>
+    <property name="logFile"
+              value="log"/>
+    <property name="logFileName"
+              value="${logDir}${logFile}.log"/>
+    <property name="logFileNameArchive"
+              value="${logDir}${logFile}-%d{yyyy-MM-dd}-part-%i.gz"/>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logFileName}</file>
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${logFileNameArchive}</fileNamePattern>
+            <maxFileSize>1MB</maxFileSize>
+            <maxHistory>1000</maxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>${logPattern}</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${logPattern}</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>

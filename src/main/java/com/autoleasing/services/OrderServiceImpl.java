@@ -40,7 +40,7 @@ public class OrderServiceImpl implements OrderService {
         this.userIdValidation = userIdValidation;
     }
 
-    public void bookACar(Integer carId, Integer userId, String commentaryFromUser) throws EntityNotFoundException, ValidationException {
+    public void bookACar(Integer carId, Integer userId, String commentaryFromUser,LocalDate dateOfRent,LocalDate dateOfRentFinish) throws EntityNotFoundException, ValidationException {
        carIdValidation.carIdValidateMethod(carId);
        userIdValidation.userIdValidateMethod(userId);
 
@@ -53,10 +53,12 @@ public class OrderServiceImpl implements OrderService {
         if (car.isAvailable()) {
             car.setAvailable(true);
         }
+        order.setId(1);
         order.setUser(user);
         order.setCar(car);
         order.setOrderStatus(OrderStatus.NEW);
-        order.setDateOfRent(LocalDate.now());
+        order.setDateOfRent(dateOfRent);
+        order.setDateOfRentFinish(dateOfRentFinish);
         order.setCommentary(commentaryFromUser);
         orderRepo.save(order);
     }

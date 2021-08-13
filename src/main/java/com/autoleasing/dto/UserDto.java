@@ -4,7 +4,6 @@ package com.autoleasing.dto;
 import com.autoleasing.entity.Role;
 
 import java.util.Set;
-//нужны ли userDto такие поля как пароль и роль?
 public class UserDto {
 
     private Integer id;
@@ -13,17 +12,19 @@ public class UserDto {
     private String email;
     private String password;
     private Set<Role> setOfRoles;
+    private String phoneNumber;
 
     public UserDto() {
     }
 
-    public UserDto(Integer id, String name, String lastName, String email, String password, Set<Role> setOfRoles) {
+    public UserDto(Integer id, String name, String lastName, String email, String password, Set<Role> setOfRoles,String phoneNumber) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
         this.setOfRoles = setOfRoles;
+        this.phoneNumber = phoneNumber;
     }
 
     public Integer getId() {
@@ -74,6 +75,13 @@ public class UserDto {
         this.setOfRoles = setOfRoles;
     }
 
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
 
     @Override
     public String toString() {
@@ -81,7 +89,10 @@ public class UserDto {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", email='" + email +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", setOfRoles=" + setOfRoles +
+                ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
     }
 }

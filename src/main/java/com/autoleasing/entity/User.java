@@ -1,7 +1,6 @@
 package com.autoleasing.entity;
 
 import javax.persistence.*;
-import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -26,7 +25,10 @@ public class User {
     @Column(name = "password")
     private String password;
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @Column(name = "phone_number")
+    private String phoneNumber;
+
+    @ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL )
     @JoinTable(name = "users_roles",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id")
@@ -36,11 +38,12 @@ public class User {
     public User() {
     }
 
-    public User(String name, String lastName, String email, String password) {
+    public User(String name, String lastName, String email, String password,String phoneNumber) {
         this.name = name;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.phoneNumber = phoneNumber;
     }
 
 
@@ -48,7 +51,7 @@ public class User {
         return setOfRoles;
     }
 
-    public void setSetOfRoles(HashSet<Role> setOfRoles) {
+    public void setSetOfRoles(Set<Role> setOfRoles) {
         this.setOfRoles = setOfRoles;
     }
 
@@ -92,17 +95,25 @@ public class User {
         this.password = password;
     }
 
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return id == user.id && Objects.equals(name, user.name) && Objects.equals(lastName, user.lastName) && Objects.equals(email, user.email) && Objects.equals(password, user.password);
+        return Objects.equals(id, user.id) && Objects.equals(name, user.name) && Objects.equals(lastName, user.lastName) && Objects.equals(email, user.email) && Objects.equals(password, user.password) && Objects.equals(phoneNumber, user.phoneNumber) && Objects.equals(setOfRoles, user.setOfRoles);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, lastName, email, password);
+        return Objects.hash(id, name, lastName, email, password, phoneNumber, setOfRoles);
     }
 
     @Override
@@ -111,6 +122,10 @@ public class User {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' + '}';
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", setOfRoles=" + setOfRoles +
+                '}';
     }
 }
