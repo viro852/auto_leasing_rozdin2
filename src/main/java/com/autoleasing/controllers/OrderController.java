@@ -9,6 +9,7 @@ import com.autoleasing.exception.ValidationException;
 import com.autoleasing.services.CarConverter;
 import com.autoleasing.services.CarService;
 import com.autoleasing.services.OrderService;
+import com.autoleasing.services.SendEmailService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,19 +23,21 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class OrderController {
 
-    private final Logger logger = LoggerFactory.getLogger(OrderController.class);
 
+    private final SendEmailService sendEmailService;
+    private final Logger logger = LoggerFactory.getLogger(OrderController.class);
     private final UserComponent userComponent;
     private final CarService carService;
     private final CarConverter carConverter;
     private final OrderService orderService;
 
     @Autowired
-    public OrderController(UserComponent userComponent, CarService carService, CarConverter carConverter, OrderService orderService) {
+    public OrderController(UserComponent userComponent, CarService carService, CarConverter carConverter, OrderService orderService,SendEmailService sendEmailService) {
         this.userComponent = userComponent;
         this.carService = carService;
         this.carConverter = carConverter;
         this.orderService = orderService;
+        this.sendEmailService = sendEmailService;
     }
 
     @GetMapping("/newOrderForm")
@@ -82,6 +85,7 @@ public class OrderController {
         } catch (ValidationException e) {
             e.printStackTrace();
         }
+        sendEmailService.sendEmail("rozdin92@gmail.com","the customer made an order","New Order");
         model.addAttribute("bookedCarBrand", carDto.getBrand());
         model.addAttribute("bookedCarModel", carDto.getModel());
 

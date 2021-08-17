@@ -77,8 +77,8 @@ public class UserController {
         User checkedUser = userService.checkUserByEmailAndPass(userDto.getEmail(), userDto.getPassword());
         if (checkedUser != null) {
             userComponent.setUser(checkedUser);
-            System.out.println(userDto.getName());
-            model.addAttribute("userEmail", userDto.getEmail());
+            System.out.println(checkedUser);
+            model.addAttribute("userEmail", checkedUser.getEmail());
             return "/personalCabinet";
         } else {
             logger.error("user entered incorrect data and transferred to errorPage");
