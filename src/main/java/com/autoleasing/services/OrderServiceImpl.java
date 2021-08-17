@@ -53,7 +53,7 @@ public class OrderServiceImpl implements OrderService {
         if (car.isAvailable()) {
             car.setAvailable(true);
         }
-        order.setId(1);
+
         order.setUser(user);
         order.setCar(car);
         order.setOrderStatus(OrderStatus.NEW);

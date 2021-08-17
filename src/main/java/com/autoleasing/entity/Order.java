@@ -11,7 +11,7 @@ import java.util.Objects;
 public class Order {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)//генерируем это значение автоматически
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "order_id")
     private Integer id;
 
@@ -47,7 +47,7 @@ public class Order {
         this.dateOfRentFinish = dateOfRentFinish;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
