@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <link href="/css/project.css" rel="stylesheet">
+</head>
+<body>
+<div class="testbox">
+    <h1>Close Order</h1>
+
+    <form action="/closeOrder" method="post">
+
+        <input name="orderId" th:value="${orderToBeClosed}" type="hidden"/>
+        <label>choose car condition:</label>
+        <div id="group">
+            <p><input name="condition" type="checkbox" value="damaged">damaged</p>
+            <p><input name="condition" type="checkbox" value="not damaged">not damaged</p>
+        </div>
+        <label>if condition is damaged pls leave a commentary:</label>
+        <br>
+        <input name="comment" placeholder="your commentary" type="text"/>
+
+        <br>
+        <br>
+        <input type="submit" value="Close Order">
+    </form>
+</div>
+<script>
+    $('#group input:checkbox').click(function () {
+        if ($(this).is(':checked')) {
+            $('#group input:checkbox').not(this).prop('checked', false);
+        }
+    });
+</script>
+</body>
+</html>

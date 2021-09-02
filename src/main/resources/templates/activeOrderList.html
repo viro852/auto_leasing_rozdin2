@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/css/project.css" rel="stylesheet">
+</head>
+<body>
+<table>
+
+    <tr>
+        <th>User</th>
+        <th>Car</th>
+        <th>Order status</th>
+        <th>Date of finish</th>
+    </tr>
+
+    <th:block th:each="order:${activeOrderList}">
+        <tr>
+            <td th:text="${order.user.email}"></td>
+            <td th:text="${order.car.model}"></td>
+            <td th:text="${order.orderStatus}"></td>
+            <td th:text="${order.dateOfRentFinish}"></td>
+            <td>
+                <form action="/closeOrderForm" method="get">
+                    <input name="orderId" th:value="${order.id}" type="hidden">
+                    <input type="submit" value="Close order">
+                </form>
+            </td>
+
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

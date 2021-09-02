@@ -63,9 +63,7 @@
             <td>
 
                 <form action="/endOfRent" method="post">
-                    <th:block th:if="${order.orderStatus  eq 'ACCEPTED'}">
-<input name="orderId" th:value="${order.id}" type="hidden">
-                        </th:block>
+                    <input name="orderId" th:value="${order.id}" type="hidden">
                     <input type="submit" value="End of rent">
 
                 </form>
