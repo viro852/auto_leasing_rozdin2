@@ -1,23 +1,35 @@
 package com.autoleasing.dto;
 
 
+import com.autoleasing.entity.Passport;
 import com.autoleasing.entity.Role;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.Set;
+
 public class UserDto {
 
     private Integer id;
+    @NotBlank
+    @Size(min = 2, message = "min 2 character")
     private String name;
+    @NotBlank
+    @Size(min = 5, message = "min 5 character")
     private String lastName;
+    @Email
     private String email;
+    @NotBlank
     private String password;
     private Set<Role> setOfRoles;
     private String phoneNumber;
+    private Passport passport;
 
     public UserDto() {
     }
 
-    public UserDto(Integer id, String name, String lastName, String email, String password, Set<Role> setOfRoles,String phoneNumber) {
+    public UserDto(Integer id, String name, String lastName, String email, String password, Set<Role> setOfRoles, String phoneNumber, Passport passport) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
@@ -25,6 +37,7 @@ public class UserDto {
         this.password = password;
         this.setOfRoles = setOfRoles;
         this.phoneNumber = phoneNumber;
+        this.passport = passport;
     }
 
     public Integer getId() {
@@ -83,6 +96,14 @@ public class UserDto {
         this.phoneNumber = phoneNumber;
     }
 
+    public Passport getPassport() {
+        return passport;
+    }
+
+    public void setPassport(Passport passport) {
+        this.passport = passport;
+    }
+
     @Override
     public String toString() {
         return "UserDto{" +
@@ -93,6 +114,7 @@ public class UserDto {
                 ", password='" + password + '\'' +
                 ", setOfRoles=" + setOfRoles +
                 ", phoneNumber='" + phoneNumber + '\'' +
+                ", passport=" + passport +
                 '}';
     }
 }

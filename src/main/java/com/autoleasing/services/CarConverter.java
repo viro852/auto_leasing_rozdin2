@@ -7,11 +7,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class CarConverter {
 
-
     public CarConverter() {
     }
 
-    public Car fromCarDtoToCar(CarDto carDto)  {
+    public Car fromCarDtoToCar(CarDto carDto) {
         Car car = new Car();
         car.setBrand(carDto.getBrand());
         car.setModel(carDto.getModel());

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class UsersConverter {
 
-    public User fromUserDtoToUser(UserDto userDto)  {
+    public User fromUserDtoToUser(UserDto userDto) {
         User user = new User();
         user.setName(userDto.getName());
         user.setLastName(userDto.getLastName());
@@ -16,6 +16,7 @@ public class UsersConverter {
         user.setPassword(userDto.getPassword());
         user.setSetOfRoles(userDto.getSetOfRoles());
         user.setPhoneNumber(userDto.getPhoneNumber());
+        user.setPassportId(userDto.getPassport());
         return user;
     }
 
@@ -28,6 +29,7 @@ public class UsersConverter {
         userDto.setPassword(user.getPassword());
         userDto.setSetOfRoles(user.getSetOfRoles());
         userDto.setPhoneNumber(user.getPhoneNumber());
+        userDto.setPassport(user.getPassportId());
         return userDto;
     }
 }

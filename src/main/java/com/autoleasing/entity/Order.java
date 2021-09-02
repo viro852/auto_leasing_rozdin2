@@ -2,6 +2,7 @@ package com.autoleasing.entity;
 
 import com.autoleasing.enums.OrderStatus;
 
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Objects;
@@ -26,6 +27,9 @@ public class Order {
     @Column(name = "commentary")
     private String commentary;
 
+    @Column(name = "admin_commentary")
+    private String adminCommentary;
+
     @Enumerated(EnumType.STRING)
     @Column(name = "status")
     private OrderStatus orderStatus;
@@ -39,12 +43,14 @@ public class Order {
     public Order() {
     }
 
-    public Order(User user, String commentary, OrderStatus orderStatus, LocalDate dateOfRent, LocalDate dateOfRentFinish) {
+    public Order(User user, String commentary, OrderStatus orderStatus, LocalDate dateOfRent, LocalDate dateOfRentFinish, String adminCommentary) {
         this.user = user;
         this.commentary = commentary;
         this.orderStatus = orderStatus;
         this.dateOfRent = dateOfRent;
         this.dateOfRentFinish = dateOfRentFinish;
+        this.adminCommentary = adminCommentary;
+
     }
 
     public Integer getId() {
@@ -103,17 +109,25 @@ public class Order {
         this.car = car;
     }
 
+    public String getAdminCommentary() {
+        return adminCommentary;
+    }
+
+    public void setAdminCommentary(String adminCommentary) {
+        this.adminCommentary = adminCommentary;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Order order = (Order) o;
-        return Objects.equals(id, order.id) && Objects.equals(user, order.user) && Objects.equals(car, order.car) && Objects.equals(commentary, order.commentary) && orderStatus == order.orderStatus && Objects.equals(dateOfRent, order.dateOfRent) && Objects.equals(dateOfRentFinish, order.dateOfRentFinish);
+        return Objects.equals(id, order.id) && Objects.equals(user, order.user) && Objects.equals(car, order.car) && Objects.equals(commentary, order.commentary) && Objects.equals(adminCommentary, order.adminCommentary) && orderStatus == order.orderStatus && Objects.equals(dateOfRent, order.dateOfRent) && Objects.equals(dateOfRentFinish, order.dateOfRentFinish);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, user, car, commentary, orderStatus, dateOfRent, dateOfRentFinish);
+        return Objects.hash(id, user, car, commentary, adminCommentary, orderStatus, dateOfRent, dateOfRentFinish);
     }
 
     @Override
@@ -123,6 +137,7 @@ public class Order {
                 ", user=" + user +
                 ", car=" + car +
                 ", commentary='" + commentary + '\'' +
+                ", adminCommentary='" + adminCommentary + '\'' +
                 ", orderStatus=" + orderStatus +
                 ", dateOfRent=" + dateOfRent +
                 ", dateOfRentFinish=" + dateOfRentFinish +

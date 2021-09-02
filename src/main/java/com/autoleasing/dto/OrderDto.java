@@ -4,28 +4,35 @@ import com.autoleasing.entity.Car;
 import com.autoleasing.entity.User;
 import com.autoleasing.enums.OrderStatus;
 
+import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
 
 public class OrderDto {
 
     private Integer id;
+    @NotBlank
     private User user;
+    @NotBlank
     private Car car;
     private String commentary;
+    private String adminCommentary;
     private OrderStatus orderStatus;
+    @NotBlank
     private LocalDate dateOfRent;
+    @NotBlank
     private LocalDate dateOfRentFinish;
 
     public OrderDto() {
     }
 
-    public OrderDto(User user, Car car, String commentary, OrderStatus orderStatus, LocalDate dateOfRent,LocalDate dateOfRentFinish) {
+    public OrderDto(User user, Car car, String commentary, OrderStatus orderStatus, LocalDate dateOfRent, LocalDate dateOfRentFinish, String adminCommentary) {
         this.user = user;
         this.car = car;
         this.commentary = commentary;
         this.orderStatus = orderStatus;
         this.dateOfRent = dateOfRent;
         this.dateOfRentFinish = dateOfRentFinish;
+        this.adminCommentary = adminCommentary;
     }
 
     public Integer getId() {
@@ -84,6 +91,14 @@ public class OrderDto {
         this.dateOfRentFinish = dateOfRentFinish;
     }
 
+    public String getAdminCommentary() {
+        return adminCommentary;
+    }
+
+    public void setAdminCommentary(String adminCommentary) {
+        this.adminCommentary = adminCommentary;
+    }
+
     @Override
     public String toString() {
         return "OrderDto{" +
@@ -91,6 +106,7 @@ public class OrderDto {
                 ", user=" + user +
                 ", car=" + car +
                 ", commentary='" + commentary + '\'' +
+                ", adminCommentary='" + adminCommentary + '\'' +
                 ", orderStatus=" + orderStatus +
                 ", dateOfRent=" + dateOfRent +
                 ", dateOfRentFinish=" + dateOfRentFinish +

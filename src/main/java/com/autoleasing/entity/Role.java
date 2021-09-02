@@ -2,6 +2,7 @@ package com.autoleasing.entity;
 
 import com.autoleasing.enums.RoleEnum;
 
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;

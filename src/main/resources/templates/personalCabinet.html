@@ -6,8 +6,23 @@
 </head>
 <body>
 <h1>Welcome to your personal cabinet <span th:text="${userEmail}"></span> !</h1>
+<td>
+    <span th:if="${admin == true}">
+        <a href="/orderList">all users orders</a>
+        <br>
+         <a href="/activeOrders">all active users orders</a>
+    </span>
+
+    <span th:unless="${admin == true}">
+        <a href="/orderList">My orders</a>
+        <br>
+        <a href="/personalInfo">My information</a>
+    </span>
+</td>
+<br>
+<a href="/carList">return to car List</a>
+<br>
 <a href="/">return to main page</a>
 <br>
-<a href="/carList">return to carList</a>
 </body>
 </html>

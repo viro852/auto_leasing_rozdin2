@@ -25,10 +25,14 @@ public class User {
     @Column(name = "password")
     private String password;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "passport_id")
+    private Passport passportId;
+
     @Column(name = "phone_number")
     private String phoneNumber;
 
-    @ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL )
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "users_roles",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id")
@@ -38,14 +42,16 @@ public class User {
     public User() {
     }
 
-    public User(String name, String lastName, String email, String password,String phoneNumber) {
+    public User(Integer id, String name, String lastName, String email, String password, Passport passportId, String phoneNumber, Set<Role> setOfRoles) {
+        this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.passportId = passportId;
         this.phoneNumber = phoneNumber;
+        this.setOfRoles = setOfRoles;
     }
-
 
     public Set<Role> getSetOfRoles() {
         return setOfRoles;
@@ -95,6 +101,14 @@ public class User {
         this.password = password;
     }
 
+    public Passport getPassportId() {
+        return passportId;
+    }
+
+    public void setPassportId(Passport passportId) {
+        this.passportId = passportId;
+    }
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -108,12 +122,12 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return Objects.equals(id, user.id) && Objects.equals(name, user.name) && Objects.equals(lastName, user.lastName) && Objects.equals(email, user.email) && Objects.equals(password, user.password) && Objects.equals(phoneNumber, user.phoneNumber) && Objects.equals(setOfRoles, user.setOfRoles);
+        return Objects.equals(id, user.id) && Objects.equals(name, user.name) && Objects.equals(lastName, user.lastName) && Objects.equals(email, user.email) && Objects.equals(password, user.password) && Objects.equals(passportId, user.passportId) && Objects.equals(phoneNumber, user.phoneNumber) && Objects.equals(setOfRoles, user.setOfRoles);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, lastName, email, password, phoneNumber, setOfRoles);
+        return Objects.hash(id, name, lastName, email, password, passportId, phoneNumber, setOfRoles);
     }
 
     @Override
@@ -124,6 +138,7 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", passportId=" + passportId +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", setOfRoles=" + setOfRoles +
                 '}';

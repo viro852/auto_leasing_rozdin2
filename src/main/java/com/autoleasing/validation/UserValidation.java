@@ -23,7 +23,7 @@ public class UserValidation {
             throw new ValidationException("Email is empty");
         }
         if (isNull(userDto.getSetOfRoles()) || userDto.getSetOfRoles().isEmpty()) {
-          throw new ValidationException("Add roles");
+            throw new ValidationException("Add roles");
         }
         if (isNull(userDto.getPassword()) || userDto.getPassword().isEmpty()) {
             throw new ValidationException("Password is Empty");

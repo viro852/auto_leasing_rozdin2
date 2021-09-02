@@ -1,103 +1,33 @@
-09:37:28.953 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 12580 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
-09:37:28.959 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
-09:37:30.258 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-09:37:30.377 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 3 JPA repository interfaces.
-09:37:31.440 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-09:37:31.455 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-09:37:31.456 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-09:37:31.456 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
-09:37:31.673 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-09:37:31.673 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2635 ms
-09:37:31.877 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-09:37:32.666 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-09:37:32.781 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-09:37:32.883 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-09:37:33.247 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-09:37:33.727 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-09:37:36.007 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-09:37:36.052 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-09:37:36.728 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-09:37:36.993 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-09:37:37.274 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-09:37:37.341 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-09:37:37.383 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 9.281 seconds (JVM running for 13.049)
-09:40:27.638 [http-nio-8080-exec-1  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-09:40:27.666 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-09:40:27.700 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-10:59:46.746 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 3276 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
-10:59:46.750 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
-10:59:48.176 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-10:59:48.284 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 3 JPA repository interfaces.
-10:59:49.051 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-10:59:49.066 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-10:59:49.067 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-10:59:49.067 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
-10:59:49.273 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-10:59:49.273 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2462 ms
-10:59:49.464 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-10:59:49.760 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-10:59:49.840 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-10:59:49.919 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-10:59:50.173 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-10:59:50.344 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-10:59:51.351 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-10:59:51.367 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-10:59:51.965 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-10:59:52.206 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-10:59:52.439 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-10:59:52.470 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-10:59:52.486 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 6.278 seconds (JVM running for 8.42)
-11:00:43.980 [http-nio-8080-exec-3  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-11:00:44.010 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-11:00:44.027 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-11:00:52.729 [http-nio-8080-exec-6  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null'} from authentification form
-11:00:55.928 [http-nio-8080-exec-9  ] INFO  c.a.controllers.OrderController - attempt to book car with id:1
-11:01:00.817 [http-nio-8080-exec-4  ] INFO  c.a.controllers.OrderController - attemt to make an order from user: 12
-11:01:00.863 [http-nio-8080-exec-4  ] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.beans.InvalidPropertyException: Invalid property 'id' of bean class [com.autoleasing.entity.Order]: Getter for property 'id' threw exception; nested exception is java.lang.reflect.InvocationTargetException] with root cause
-java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because "this.id" is null
-	at com.autoleasing.entity.Order.getId(Order.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.springframework.beans.BeanWrapperImpl$BeanPropertyHandler.getValue(BeanWrapperImpl.java:308)
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:630)
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617)
-	at org.springframework.data.util.DirectFieldAccessFallbackBeanWrapper.getPropertyValue(DirectFieldAccessFallbackBeanWrapper.java:52)
-	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.getId(JpaMetamodelEntityInformation.java:162)
-	at org.springframework.data.repository.core.support.AbstractEntityInformation.isNew(AbstractEntityInformation.java:46)
-	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.isNew(JpaMetamodelEntityInformation.java:246)
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:596)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
-	at com.sun.proxy.$Proxy88.save(Unknown Source)
-	at com.autoleasing.services.OrderServiceImpl.bookACar(OrderServiceImpl.java:63)
-	at com.autoleasing.controllers.OrderController.createOrder(OrderController.java:73)
+00:00:52.263 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+00:00:52.263 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 10660 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
+00:00:52.274 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+00:00:53.453 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:00:53.574 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 3 JPA repository interfaces.
+00:00:54.274 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:00:54.288 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:00:54.288 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:00:54.288 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+00:00:54.476 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:00:54.476 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2117 ms
+00:00:54.621 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:00:55.036 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:00:55.114 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:00:55.196 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+00:00:55.391 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:00:55.578 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+00:00:56.590 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:00:56.604 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:00:57.200 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:00:57.453 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+00:00:57.688 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:00:57.732 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:00:57.749 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 6.12 seconds (JVM running for 8.49)
+00:01:14.381 [http-nio-8080-exec-3  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:01:14.381 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:01:14.383 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+00:01:14.434 [http-nio-8080-exec-3  ] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.autoleasing.entity.User.getId()" because "currentUser" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.autoleasing.entity.User.getId()" because "currentUser" is null
+	at com.autoleasing.controllers.UserController.personalInfoPage(UserController.java:61)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -111,8 +41,8 @@ java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" bec
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
@@ -148,231 +78,9 @@ java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" bec
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-11:04:40.784 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 1696 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
-11:04:40.788 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
-11:04:41.932 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11:04:42.080 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 133 ms. Found 3 JPA repository interfaces.
-11:04:42.951 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-11:04:42.967 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-11:04:42.968 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11:04:42.968 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
-11:04:43.190 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11:04:43.191 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2260 ms
-11:04:43.423 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11:04:43.803 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11:04:43.900 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11:04:43.985 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-11:04:44.268 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-11:04:44.502 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-11:04:45.695 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-11:04:45.713 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11:04:46.386 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11:04:46.696 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-11:04:46.954 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-11:04:46.989 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-11:04:47.005 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 6.773 seconds (JVM running for 11.463)
-11:05:32.742 [http-nio-8080-exec-1  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-11:05:32.743 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-11:05:32.765 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-11:06:24.646 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s733ms565µs).
-11:06:29.865 [http-nio-8080-exec-8  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null'} from authentification form
-11:07:02.727 [http-nio-8080-exec-6  ] INFO  c.a.controllers.OrderController - attempt to book car with id:1
-11:07:17.399 [http-nio-8080-exec-4  ] INFO  c.a.controllers.OrderController - attempt to book car with id:1
-11:07:34.973 [http-nio-8080-exec-9  ] INFO  c.a.controllers.OrderController - attemt to make an order from user: 12
-11:08:17.035 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s209ms267µs800ns).
-11:08:58.673 [http-nio-8080-exec-1  ] INFO  c.a.controllers.OrderController - attemt to make an order from user: 12
-11:12:56.228 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m24s744ms399µs).
-11:21:04.186 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m7s958ms960µs600ns).
-11:21:51.648 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 952 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
-11:21:51.656 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
-11:21:53.152 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11:21:53.302 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 133 ms. Found 3 JPA repository interfaces.
-11:21:54.181 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-11:21:54.198 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-11:21:54.199 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11:21:54.199 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
-11:21:54.439 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11:21:54.439 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2656 ms
-11:21:54.731 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11:21:55.093 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11:21:55.182 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11:21:55.306 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-11:21:55.627 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-11:21:55.856 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-11:21:57.105 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-11:21:57.122 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11:21:57.804 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11:21:58.073 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-11:21:58.320 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-11:21:58.353 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-11:21:58.371 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 8.101 seconds (JVM running for 12.533)
-11:22:42.490 [http-nio-8080-exec-3  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-11:22:42.519 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-11:22:42.522 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-11:22:42.956 [http-nio-8080-exec-3  ] INFO  c.a.controllers.OrderController - attemt to make an order from user: 12
-11:34:11.009 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m14s886ms175µs500ns).
-11:34:13.295 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11:34:13.364 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11:34:13.472 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-11:34:36.677 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 5872 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
-11:34:36.682 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
-11:34:38.073 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11:34:38.202 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116 ms. Found 3 JPA repository interfaces.
-11:34:38.903 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-11:34:38.917 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-11:34:38.918 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11:34:38.919 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
-11:34:42.946 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11:34:42.948 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6130 ms
-11:34:43.156 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11:34:43.736 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11:34:44.012 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11:34:44.280 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-11:34:44.865 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-11:34:45.063 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-11:34:46.059 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-11:34:46.106 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11:34:46.787 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11:34:47.095 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-11:34:47.380 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-11:34:47.412 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-11:34:47.628 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 11.723 seconds (JVM running for 15.386)
-11:35:03.894 [http-nio-8080-exec-3  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-11:35:03.895 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-11:35:03.923 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-11:35:08.834 [http-nio-8080-exec-5  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null'} from authentification form
-11:35:27.539 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 8724 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
-11:35:27.544 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
-11:35:28.568 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11:35:28.764 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 183 ms. Found 3 JPA repository interfaces.
-11:35:29.911 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-11:35:29.957 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-11:35:29.958 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11:35:29.958 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
-11:35:30.226 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11:35:30.227 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2600 ms
-11:35:30.480 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11:35:30.978 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11:35:31.093 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11:35:31.252 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-11:35:31.511 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-11:35:31.755 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-11:35:32.992 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-11:35:33.037 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11:35:33.683 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11:35:33.951 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-11:35:34.160 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-11:35:34.192 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-11:35:34.230 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 7.301 seconds (JVM running for 10.773)
-11:36:34.043 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11:36:34.136 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11:36:34.174 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-11:36:38.535 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 520 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
-11:36:38.540 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
-11:36:39.466 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11:36:39.595 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 113 ms. Found 3 JPA repository interfaces.
-11:36:40.246 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-11:36:40.259 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-11:36:40.259 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11:36:40.260 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
-11:36:40.461 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11:36:40.461 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1853 ms
-11:36:40.637 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11:36:40.908 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11:36:40.979 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11:36:41.047 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-11:36:41.214 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-11:36:41.386 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-11:36:42.439 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-11:36:42.456 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11:36:43.054 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11:36:43.294 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-11:36:43.506 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-11:36:43.541 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-11:36:43.557 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 5.614 seconds (JVM running for 8.094)
-11:36:59.837 [http-nio-8080-exec-1  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-11:36:59.838 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-11:36:59.839 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-11:37:01.960 [http-nio-8080-exec-2  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null'} from authentification form
-11:37:21.169 [http-nio-8080-exec-8  ] INFO  c.a.controllers.OrderController - attempt to book car with id:1
-11:37:35.943 [http-nio-8080-exec-1  ] INFO  c.a.controllers.OrderController - attemt to make an order from user: 12
-11:45:33.491 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11:45:33.510 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11:45:33.519 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-11:45:42.432 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 10248 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
-11:45:42.437 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
-11:45:43.634 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11:45:43.748 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 99 ms. Found 3 JPA repository interfaces.
-11:45:44.448 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-11:45:44.462 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-11:45:44.462 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11:45:44.463 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
-11:45:44.697 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11:45:44.698 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2135 ms
-11:45:44.874 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11:45:45.171 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11:45:45.248 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11:45:45.344 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-11:45:45.627 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-11:45:45.811 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-11:45:46.818 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-11:45:46.864 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11:45:47.448 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11:45:47.674 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-11:45:47.883 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-11:45:47.913 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-11:45:47.927 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 6.191 seconds (JVM running for 8.433)
-11:46:08.431 [http-nio-8080-exec-1  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-11:46:08.431 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-11:46:08.433 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-11:46:10.783 [http-nio-8080-exec-3  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null'} from authentification form
-11:46:13.720 [http-nio-8080-exec-5  ] INFO  c.a.controllers.OrderController - attempt to book car with id:1
-11:46:17.292 [http-nio-8080-exec-8  ] INFO  c.a.controllers.OrderController - attemt to make an order from user: 12
-11:46:17.325 [http-nio-8080-exec-8  ] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.beans.InvalidPropertyException: Invalid property 'id' of bean class [com.autoleasing.entity.Order]: Getter for property 'id' threw exception; nested exception is java.lang.reflect.InvocationTargetException] with root cause
-java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because "this.id" is null
-	at com.autoleasing.entity.Order.getId(Order.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.springframework.beans.BeanWrapperImpl$BeanPropertyHandler.getValue(BeanWrapperImpl.java:308)
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:630)
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617)
-	at org.springframework.data.util.DirectFieldAccessFallbackBeanWrapper.getPropertyValue(DirectFieldAccessFallbackBeanWrapper.java:52)
-	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.getId(JpaMetamodelEntityInformation.java:162)
-	at org.springframework.data.repository.core.support.AbstractEntityInformation.isNew(AbstractEntityInformation.java:46)
-	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.isNew(JpaMetamodelEntityInformation.java:246)
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:596)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
-	at com.sun.proxy.$Proxy88.save(Unknown Source)
-	at com.autoleasing.services.OrderServiceImpl.bookACar(OrderServiceImpl.java:63)
-	at com.autoleasing.controllers.OrderController.createOrder(OrderController.java:73)
+00:01:25.726 [http-nio-8080-exec-7  ] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.autoleasing.entity.User.getId()" because "currentUser" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.autoleasing.entity.User.getId()" because "currentUser" is null
+	at com.autoleasing.controllers.UserController.personalInfoPage(UserController.java:61)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -386,8 +94,8 @@ java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" bec
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
@@ -423,65 +131,931 @@ java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" bec
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-11:57:49.804 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 11540 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
-11:57:49.835 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
-11:57:51.740 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11:57:51.874 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119 ms. Found 3 JPA repository interfaces.
-11:57:52.775 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-11:57:52.820 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-11:57:52.846 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11:57:52.849 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
-11:57:53.232 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11:57:53.233 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3236 ms
-11:57:53.433 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11:57:53.793 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11:57:53.874 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11:57:53.954 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-11:57:54.211 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-11:57:54.558 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-11:57:56.350 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-11:57:56.366 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11:57:57.090 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11:57:57.396 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-11:57:57.689 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-11:57:57.723 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-11:57:57.738 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 8.734 seconds (JVM running for 12.891)
-11:58:39.715 [http-nio-8080-exec-3  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-11:58:39.727 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-11:58:39.730 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-11:58:56.690 [http-nio-8080-exec-6  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null'} from authentification form
-11:59:03.915 [http-nio-8080-exec-10 ] INFO  c.a.controllers.OrderController - attempt to book car with id:1
-11:59:10.052 [http-nio-8080-exec-4  ] INFO  c.a.controllers.OrderController - attemt to make an order from user: 12
-11:59:44.866 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 10124 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
-11:59:44.870 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
-11:59:46.051 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11:59:46.196 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 130 ms. Found 3 JPA repository interfaces.
-11:59:46.987 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-11:59:47.016 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-11:59:47.017 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11:59:47.018 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
-11:59:47.467 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11:59:47.467 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2531 ms
-11:59:47.684 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11:59:48.145 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11:59:48.231 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11:59:48.350 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-11:59:49.731 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-11:59:49.926 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-11:59:51.078 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-11:59:51.116 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11:59:52.075 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11:59:52.350 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-11:59:52.589 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-11:59:52.635 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-11:59:52.666 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 8.395 seconds (JVM running for 13.442)
-12:00:09.120 [http-nio-8080-exec-1  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-12:00:09.149 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-12:00:09.151 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-12:00:14.356 [http-nio-8080-exec-4  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null'} from authentification form
-12:00:54.039 [http-nio-8080-exec-1  ] INFO  c.a.controllers.OrderController - attempt to book car with id:1
-12:01:06.841 [http-nio-8080-exec-5  ] INFO  c.a.controllers.OrderController - attemt to make an order from user: 12
-12:01:46.917 [http-nio-8080-exec-6  ] INFO  c.a.controllers.OrderController - attemt to make an order from user: 12
-12:04:18.359 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-12:04:18.412 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-12:04:18.492 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:01:35.652 [http-nio-8080-exec-8  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='grachev@gmail.com', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+00:01:44.926 [http-nio-8080-exec-1  ] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'currentUserPassport' on field 'dateOfBirth': rejected value [1992-12-12]; codes [typeMismatch.currentUserPassport.dateOfBirth,typeMismatch.dateOfBirth,typeMismatch.java.time.LocalDate,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [currentUserPassport.dateOfBirth,dateOfBirth]; arguments []; default message [dateOfBirth]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDate' for property 'dateOfBirth'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@javax.persistence.Column java.time.LocalDate] for value '1992-12-12'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [1992-12-12]]]
+00:03:26.688 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+00:03:26.695 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 13800 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
+00:03:26.696 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+00:03:27.927 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:03:28.056 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 3 JPA repository interfaces.
+00:03:28.839 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:03:28.854 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:03:28.855 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:03:28.860 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+00:03:29.058 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:03:29.058 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2280 ms
+00:03:29.315 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:03:29.932 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:03:30.015 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:03:30.099 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+00:03:30.309 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:03:30.513 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+00:03:31.614 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:03:31.629 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:03:32.268 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:03:32.538 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+00:03:32.788 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:03:32.834 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:03:32.851 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 6.814 seconds (JVM running for 10.338)
+00:04:05.253 [http-nio-8080-exec-1  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:04:05.255 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:04:05.264 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+00:04:07.872 [http-nio-8080-exec-3  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='grachev@gmail.com', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+00:04:15.456 [http-nio-8080-exec-7  ] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'currentUserPassport' on field 'dateOfBirth': rejected value [1992-12-12]; codes [typeMismatch.currentUserPassport.dateOfBirth,typeMismatch.dateOfBirth,typeMismatch.java.time.LocalDate,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [currentUserPassport.dateOfBirth,dateOfBirth]; arguments []; default message [dateOfBirth]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDate' for property 'dateOfBirth'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@javax.persistence.Column java.time.LocalDate] for value '1992-12-12'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [1992-12-12]]]
+22:33:40.510 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+22:33:40.520 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 212 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
+22:33:40.521 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+22:33:41.643 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:33:41.767 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 107 ms. Found 3 JPA repository interfaces.
+22:33:42.466 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:33:42.479 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:33:42.480 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:33:42.480 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+22:33:42.660 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:33:42.663 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2081 ms
+22:33:42.814 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:33:43.425 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:33:43.499 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:33:43.578 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+22:33:43.781 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+22:33:43.963 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+22:33:45.019 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22:33:45.031 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:33:45.591 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:33:45.825 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+22:33:46.032 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:33:46.085 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:33:46.101 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 6.192 seconds (JVM running for 8.085)
+22:34:00.151 [http-nio-8080-exec-3  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:34:00.151 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:34:00.154 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+22:34:05.394 [http-nio-8080-exec-7  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='grachev@gmail.com', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+22:35:12.322 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+22:35:12.322 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 7764 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
+22:35:12.325 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+22:35:13.329 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:35:13.584 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 245 ms. Found 3 JPA repository interfaces.
+22:35:14.234 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:35:14.247 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:35:14.251 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:35:14.251 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+22:35:14.417 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:35:14.417 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2022 ms
+22:35:14.549 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:35:14.933 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:35:15.002 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:35:15.081 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+22:35:15.263 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+22:35:15.431 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+22:35:16.454 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22:35:16.468 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:35:17.049 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:35:17.313 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+22:35:17.868 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:35:17.991 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:35:18.027 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 7.018 seconds (JVM running for 8.637)
+22:35:25.576 [http-nio-8080-exec-3  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:35:25.576 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:35:25.577 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22:35:28.234 [http-nio-8080-exec-4  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='grachev@gmail.com', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+22:45:28.134 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+22:45:28.134 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 10208 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
+22:45:28.138 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+22:45:29.261 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:45:29.392 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 113 ms. Found 3 JPA repository interfaces.
+22:45:30.101 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:45:30.114 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:45:30.115 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:45:30.115 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+22:45:30.300 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:45:30.300 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2094 ms
+22:45:30.449 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:45:30.814 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:45:30.891 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:45:30.980 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+22:45:31.166 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+22:45:31.345 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+22:45:32.345 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22:45:32.361 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:45:32.933 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:45:33.174 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+22:45:33.412 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:45:33.445 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:45:33.463 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 5.971 seconds (JVM running for 7.564)
+22:45:44.870 [http-nio-8080-exec-1  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:45:44.871 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:45:44.872 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22:45:53.113 [http-nio-8080-exec-4  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+22:46:09.765 [http-nio-8080-exec-10 ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='grachev@gmail.com', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+23:00:34.791 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 5416 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
+23:00:34.795 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+23:00:34.793 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+23:00:43.828 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+23:00:43.842 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 11776 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app)
+23:00:43.843 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+23:00:44.969 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:00:45.213 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 228 ms. Found 3 JPA repository interfaces.
+23:00:47.296 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:00:47.310 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:00:47.311 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:00:47.311 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+23:00:47.507 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:00:47.507 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3606 ms
+23:00:47.652 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:00:47.973 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:00:48.051 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:00:48.203 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+23:00:48.397 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23:00:48.575 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+23:00:49.626 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:00:49.639 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:00:50.240 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:00:50.486 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+23:00:50.718 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:00:50.763 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:00:50.778 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 7.627 seconds (JVM running for 8.992)
+23:01:25.278 [http-nio-8080-exec-1  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:01:25.279 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:01:25.281 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+23:01:48.579 [http-nio-8080-exec-4  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='grachev@gmail.com', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+23:02:04.969 [http-nio-8080-exec-1  ] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'currentUserPassport' on field 'dateOfBirth': rejected value [1992-11-12]; codes [typeMismatch.currentUserPassport.dateOfBirth,typeMismatch.dateOfBirth,typeMismatch.java.time.LocalDate,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [currentUserPassport.dateOfBirth,dateOfBirth]; arguments []; default message [dateOfBirth]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDate' for property 'dateOfBirth'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@javax.persistence.Column java.time.LocalDate] for value '1992-11-12'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [1992-11-12]]]
+09:40:45.417 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+09:40:45.419 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 8420 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3)
+09:40:45.422 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+09:40:46.478 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:40:46.600 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108 ms. Found 3 JPA repository interfaces.
+09:40:47.281 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+09:40:47.293 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+09:40:47.294 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:40:47.294 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+09:40:47.460 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:40:47.462 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1976 ms
+09:40:47.607 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:40:48.127 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:40:48.199 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09:40:48.273 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+09:40:48.458 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:40:48.634 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+09:40:49.680 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:40:49.693 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:40:50.374 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:40:50.608 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+09:40:50.885 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+09:40:50.928 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+09:40:50.944 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 6.17 seconds (JVM running for 8.142)
+09:41:12.532 [http-nio-8080-exec-1  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:41:12.532 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:41:12.536 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+09:41:14.934 [http-nio-8080-exec-6  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='grachev@gmail.com', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+09:41:16.731 [http-nio-8080-exec-7  ] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS; nested exception is java.lang.IllegalArgumentException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS] with root cause
+java.lang.IllegalArgumentException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.fromName(EnumJavaTypeDescriptor.java:84)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.wrap(EnumJavaTypeDescriptor.java:54)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.wrap(EnumJavaTypeDescriptor.java:16)
+	at org.hibernate.type.descriptor.sql.VarcharTypeDescriptor$2.doExtract(VarcharTypeDescriptor.java:62)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47)
+	at org.hibernate.metamodel.model.convert.internal.NamedEnumValueConverter.readValue(NamedEnumValueConverter.java:68)
+	at org.hibernate.type.EnumType.nullSafeGet(EnumType.java:250)
+	at org.hibernate.type.CustomType.nullSafeGet(CustomType.java:119)
+	at org.hibernate.type.AbstractType.hydrate(AbstractType.java:91)
+	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:3131)
+	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1863)
+	at org.hibernate.loader.Loader.hydrateEntityState(Loader.java:1791)
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1764)
+	at org.hibernate.loader.Loader.getRow(Loader.java:1616)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:740)
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1039)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:990)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:959)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349)
+	at org.hibernate.loader.Loader.doList(Loader.java:2843)
+	at org.hibernate.loader.Loader.doList(Loader.java:2825)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2657)
+	at org.hibernate.loader.Loader.list(Loader.java:2652)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1414)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1636)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1604)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:396)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy91.findAll(Unknown Source)
+	at com.autoleasing.services.OrderServiceImpl.getAllOrderList(OrderServiceImpl.java:98)
+	at com.autoleasing.controllers.OrderController.orderList(OrderController.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+09:41:20.213 [http-nio-8080-exec-10 ] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS; nested exception is java.lang.IllegalArgumentException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS] with root cause
+java.lang.IllegalArgumentException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.fromName(EnumJavaTypeDescriptor.java:84)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.wrap(EnumJavaTypeDescriptor.java:54)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.wrap(EnumJavaTypeDescriptor.java:16)
+	at org.hibernate.type.descriptor.sql.VarcharTypeDescriptor$2.doExtract(VarcharTypeDescriptor.java:62)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47)
+	at org.hibernate.metamodel.model.convert.internal.NamedEnumValueConverter.readValue(NamedEnumValueConverter.java:68)
+	at org.hibernate.type.EnumType.nullSafeGet(EnumType.java:250)
+	at org.hibernate.type.CustomType.nullSafeGet(CustomType.java:119)
+	at org.hibernate.type.AbstractType.hydrate(AbstractType.java:91)
+	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:3131)
+	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1863)
+	at org.hibernate.loader.Loader.hydrateEntityState(Loader.java:1791)
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1764)
+	at org.hibernate.loader.Loader.getRow(Loader.java:1616)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:740)
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1039)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:990)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:959)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349)
+	at org.hibernate.loader.Loader.doList(Loader.java:2843)
+	at org.hibernate.loader.Loader.doList(Loader.java:2825)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2657)
+	at org.hibernate.loader.Loader.list(Loader.java:2652)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1414)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1636)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1604)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:396)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy91.findAll(Unknown Source)
+	at com.autoleasing.services.OrderServiceImpl.getAllOrderList(OrderServiceImpl.java:98)
+	at com.autoleasing.controllers.OrderController.orderList(OrderController.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+09:43:06.721 [http-nio-8080-exec-6  ] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS; nested exception is java.lang.IllegalArgumentException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS] with root cause
+java.lang.IllegalArgumentException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.fromName(EnumJavaTypeDescriptor.java:84)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.wrap(EnumJavaTypeDescriptor.java:54)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.wrap(EnumJavaTypeDescriptor.java:16)
+	at org.hibernate.type.descriptor.sql.VarcharTypeDescriptor$2.doExtract(VarcharTypeDescriptor.java:62)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47)
+	at org.hibernate.metamodel.model.convert.internal.NamedEnumValueConverter.readValue(NamedEnumValueConverter.java:68)
+	at org.hibernate.type.EnumType.nullSafeGet(EnumType.java:250)
+	at org.hibernate.type.CustomType.nullSafeGet(CustomType.java:119)
+	at org.hibernate.type.AbstractType.hydrate(AbstractType.java:91)
+	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:3131)
+	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1863)
+	at org.hibernate.loader.Loader.hydrateEntityState(Loader.java:1791)
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1764)
+	at org.hibernate.loader.Loader.getRow(Loader.java:1616)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:740)
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1039)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:990)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:959)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349)
+	at org.hibernate.loader.Loader.doList(Loader.java:2843)
+	at org.hibernate.loader.Loader.doList(Loader.java:2825)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2657)
+	at org.hibernate.loader.Loader.list(Loader.java:2652)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1414)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1636)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1604)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:396)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy91.findAll(Unknown Source)
+	at com.autoleasing.services.OrderServiceImpl.getAllOrderList(OrderServiceImpl.java:98)
+	at com.autoleasing.controllers.OrderController.orderList(OrderController.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+09:43:15.451 [http-nio-8080-exec-8  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+09:43:16.625 [http-nio-8080-exec-10 ] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS; nested exception is java.lang.IllegalArgumentException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS] with root cause
+java.lang.IllegalArgumentException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.fromName(EnumJavaTypeDescriptor.java:84)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.wrap(EnumJavaTypeDescriptor.java:54)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.wrap(EnumJavaTypeDescriptor.java:16)
+	at org.hibernate.type.descriptor.sql.VarcharTypeDescriptor$2.doExtract(VarcharTypeDescriptor.java:62)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47)
+	at org.hibernate.metamodel.model.convert.internal.NamedEnumValueConverter.readValue(NamedEnumValueConverter.java:68)
+	at org.hibernate.type.EnumType.nullSafeGet(EnumType.java:250)
+	at org.hibernate.type.CustomType.nullSafeGet(CustomType.java:119)
+	at org.hibernate.type.AbstractType.hydrate(AbstractType.java:91)
+	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:3131)
+	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1863)
+	at org.hibernate.loader.Loader.hydrateEntityState(Loader.java:1791)
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1764)
+	at org.hibernate.loader.Loader.getRow(Loader.java:1616)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:740)
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1039)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:990)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:959)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349)
+	at org.hibernate.loader.Loader.doList(Loader.java:2843)
+	at org.hibernate.loader.Loader.doList(Loader.java:2825)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2657)
+	at org.hibernate.loader.Loader.list(Loader.java:2652)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1414)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1636)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1604)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:396)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy91.findAll(Unknown Source)
+	at com.autoleasing.services.OrderServiceImpl.getAllOrderList(OrderServiceImpl.java:98)
+	at com.autoleasing.controllers.OrderController.orderList(OrderController.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+09:43:52.556 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+09:43:52.564 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 13184 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3)
+09:43:52.564 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+09:43:53.674 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:43:53.791 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 3 JPA repository interfaces.
+09:43:54.595 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+09:43:54.614 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+09:43:54.616 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:43:54.616 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+09:43:54.789 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:43:54.789 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2158 ms
+09:43:54.923 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:43:55.195 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:43:55.264 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09:43:55.340 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+09:43:55.523 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:43:55.700 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+09:44:02.477 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:44:02.491 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:44:03.023 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:44:03.222 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+09:44:03.420 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+09:44:03.448 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+09:44:03.463 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 11.525 seconds (JVM running for 13.235)
+09:44:08.754 [http-nio-8080-exec-1  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:44:08.754 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:44:08.755 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+09:44:10.694 [http-nio-8080-exec-4  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+09:44:21.299 [http-nio-8080-exec-8  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+10:01:41.858 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+10:01:41.863 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 7640 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3)
+10:01:41.864 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+10:01:42.955 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:01:43.101 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 132 ms. Found 3 JPA repository interfaces.
+10:01:43.811 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:01:43.824 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:01:43.824 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:01:43.825 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+10:01:44.013 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:01:44.013 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2078 ms
+10:01:44.163 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:01:44.520 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:01:44.592 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:01:44.669 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+10:01:44.861 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:01:45.070 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+10:01:46.040 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:01:46.053 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:01:46.632 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:01:46.868 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:01:47.111 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:01:47.151 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:01:47.169 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 6.027 seconds (JVM running for 7.962)
+10:02:04.035 [http-nio-8080-exec-3  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:02:04.035 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:02:04.037 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+10:02:04.108 [http-nio-8080-exec-3  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='grachev@gmail.com', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+10:02:07.378 [http-nio-8080-exec-6  ] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS; nested exception is java.lang.IllegalArgumentException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS] with root cause
+java.lang.IllegalArgumentException: No enum constant com.autoleasing.enums.OrderStatus.SUCCESS
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.fromName(EnumJavaTypeDescriptor.java:84)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.wrap(EnumJavaTypeDescriptor.java:54)
+	at org.hibernate.type.descriptor.java.EnumJavaTypeDescriptor.wrap(EnumJavaTypeDescriptor.java:16)
+	at org.hibernate.type.descriptor.sql.VarcharTypeDescriptor$2.doExtract(VarcharTypeDescriptor.java:62)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47)
+	at org.hibernate.metamodel.model.convert.internal.NamedEnumValueConverter.readValue(NamedEnumValueConverter.java:68)
+	at org.hibernate.type.EnumType.nullSafeGet(EnumType.java:250)
+	at org.hibernate.type.CustomType.nullSafeGet(CustomType.java:119)
+	at org.hibernate.type.AbstractType.hydrate(AbstractType.java:91)
+	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:3131)
+	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1863)
+	at org.hibernate.loader.Loader.hydrateEntityState(Loader.java:1791)
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1764)
+	at org.hibernate.loader.Loader.getRow(Loader.java:1616)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:740)
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1039)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:990)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:959)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349)
+	at org.hibernate.loader.Loader.doList(Loader.java:2843)
+	at org.hibernate.loader.Loader.doList(Loader.java:2825)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2657)
+	at org.hibernate.loader.Loader.list(Loader.java:2652)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1414)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1636)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1604)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:396)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy91.findAll(Unknown Source)
+	at com.autoleasing.services.OrderServiceImpl.getAllOrderList(OrderServiceImpl.java:98)
+	at com.autoleasing.controllers.OrderController.orderList(OrderController.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+10:02:16.232 [http-nio-8080-exec-9  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+10:02:19.378 [http-nio-8080-exec-10 ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+10:34:24.165 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+10:34:24.164 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 13164 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3)
+10:34:24.167 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+10:34:25.289 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:34:25.413 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 3 JPA repository interfaces.
+10:34:26.091 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:34:26.148 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:34:26.149 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:34:26.149 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+10:34:26.345 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:34:26.345 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2093 ms
+10:34:26.490 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:34:26.828 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:34:26.898 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:34:26.974 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+10:34:27.155 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:34:27.343 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+10:34:28.358 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:34:28.372 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:34:28.953 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:34:29.203 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:34:29.424 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:34:29.453 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:34:29.469 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 5.898 seconds (JVM running for 7.502)
+10:35:02.176 [http-nio-8080-exec-3  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:35:02.177 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:35:02.179 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+10:35:06.657 [http-nio-8080-exec-7  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+10:35:37.631 [http-nio-8080-exec-3  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='grachev@gmail.com', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+10:35:57.534 [http-nio-8080-exec-8  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+10:37:32.461 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+10:37:32.472 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 8028 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3)
+10:37:32.473 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+10:37:35.052 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:37:35.172 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 107 ms. Found 3 JPA repository interfaces.
+10:37:35.841 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:37:35.854 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:37:35.857 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:37:35.857 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+10:37:36.033 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:37:36.034 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3480 ms
+10:37:36.360 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:37:36.722 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:37:36.790 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:37:36.870 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+10:37:37.060 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:37:37.235 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+10:37:39.783 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:37:39.795 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:37:40.373 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:37:40.598 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:37:40.819 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:37:40.861 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:37:40.877 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 8.973 seconds (JVM running for 12.43)
+10:38:19.181 [http-nio-8080-exec-1  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:38:19.181 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:38:19.183 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+10:38:19.245 [http-nio-8080-exec-1  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+10:48:21.095 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+10:48:21.102 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 13452 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3)
+10:48:21.102 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+10:48:22.483 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:48:22.601 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 3 JPA repository interfaces.
+10:48:23.273 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:48:23.285 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:48:23.286 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:48:23.287 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+10:48:23.462 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:48:23.463 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2286 ms
+10:48:23.614 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:48:23.925 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:48:23.992 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:48:24.070 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+10:48:24.249 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:48:24.419 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+10:48:25.396 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:48:25.408 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:48:25.960 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:48:26.191 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:48:26.401 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:48:26.436 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:48:26.452 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 5.926 seconds (JVM running for 7.518)
+10:48:43.598 [http-nio-8080-exec-1  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:48:43.598 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:48:43.600 [http-nio-8080-exec-1  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+10:48:46.519 [http-nio-8080-exec-4  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form
+13:41:11.000 [background-preinit    ] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+13:41:11.009 [main                  ] INFO  c.a.AutoLeasingAppApplication - Starting AutoLeasingAppApplication using Java 15.0.1 on DESKTOP-01OFPC5 with PID 12852 (C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3\target\classes started by Админ in C:\Users\Админ\IdeaProjects\untitled\auto-leasing-app3)
+13:41:11.010 [main                  ] INFO  c.a.AutoLeasingAppApplication - No active profile set, falling back to default profiles: default
+13:41:12.357 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:41:12.495 [main                  ] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 121 ms. Found 3 JPA repository interfaces.
+13:41:13.319 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+13:41:13.334 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+13:41:13.335 [main                  ] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:41:13.336 [main                  ] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+13:41:13.532 [main                  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:41:13.533 [main                  ] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2457 ms
+13:41:13.701 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:41:14.284 [main                  ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:41:14.363 [main                  ] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13:41:14.456 [main                  ] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+13:41:14.693 [main                  ] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+13:41:14.968 [main                  ] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+13:41:16.142 [main                  ] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:41:16.155 [main                  ] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:41:16.754 [main                  ] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:41:17.036 [main                  ] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+13:41:17.236 [main                  ] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+13:41:17.278 [main                  ] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+13:41:17.294 [main                  ] INFO  c.a.AutoLeasingAppApplication - Started AutoLeasingAppApplication in 6.963 seconds (JVM running for 9.137)
+13:42:16.980 [http-nio-8080-exec-3  ] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:42:16.980 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:42:16.983 [http-nio-8080-exec-3  ] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+13:42:24.180 [http-nio-8080-exec-9  ] INFO  c.a.controllers.UserController - attempt to authentification UserDto{id=null, name='null', lastName='null', email='juliahome@list.ru', password='rozdin199254', setOfRoles=null, phoneNumber='null', passport=null} from authentification form

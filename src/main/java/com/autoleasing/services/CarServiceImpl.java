@@ -32,6 +32,7 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public CarDto saveNewCar(CarDto carDto) throws ValidationException {
+        carDto.setAvailable(true);
         carValidation.validateCarDto(carDto);
         Car carForSave = carRepo.save(carConverter.fromCarDtoToCar(carDto));
         return carConverter.fromCarToCarDto(carForSave);

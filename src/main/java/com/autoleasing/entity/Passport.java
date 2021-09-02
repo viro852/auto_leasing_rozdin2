@@ -22,19 +22,14 @@ public class Passport {
     @Column(name = "registration")
     private String registration;
 
-
-    @OneToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-
     public Passport() {
     }
 
-    public Passport(String seriaNumber, LocalDate dateOfBirth, String registration, User userId) {
+    public Passport(String seriaNumber, LocalDate dateOfBirth, String registration) {
         this.seriaNumber = seriaNumber;
         this.dateOfBirth = dateOfBirth;
         this.registration = registration;
-        this.user = userId;
+
     }
 
     public int getId() {
@@ -69,32 +64,26 @@ public class Passport {
         this.registration = registration;
     }
 
-    public User getUserId() {
-        return user;
-    }
-
-    public void setUserId(User userId) {
-        this.user = userId;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Passport passport = (Passport) o;
-        return id == passport.id && Objects.equals(seriaNumber, passport.seriaNumber) && Objects.equals(dateOfBirth, passport.dateOfBirth) && Objects.equals(registration, passport.registration) && Objects.equals(user, passport.user);
+        return id == passport.id && Objects.equals(seriaNumber, passport.seriaNumber) && Objects.equals(dateOfBirth, passport.dateOfBirth) && Objects.equals(registration, passport.registration);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, seriaNumber, dateOfBirth, registration, user);
+        return Objects.hash(id, seriaNumber, dateOfBirth, registration);
     }
 
     @Override
     public String toString() {
         return "Passport{" +
                 "id=" + id +
-                ", userId=" + user +
+                ", seriaNumber='" + seriaNumber + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", registration='" + registration + '\'' +
                 '}';
     }
 }

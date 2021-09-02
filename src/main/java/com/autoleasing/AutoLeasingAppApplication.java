@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 public class AutoLeasingAppApplication {
 
-    public static void main(String[] args) {SpringApplication.run(AutoLeasingAppApplication.class, args); }
+    public static void main(String[] args) {
+        SpringApplication.run(AutoLeasingAppApplication.class, args);
+    }
 
 
 }

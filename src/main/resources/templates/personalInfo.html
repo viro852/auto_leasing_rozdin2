@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span th:text="${currentUser.name}"></span>
+<br>
+<span th:text="${currentUser.lastName}"></span>
+<br>
+<span th:text="${currentUser.email}"></span>
+<br>
+<span th:text="${currentUser.phoneNumber}"></span>
+<br>
+<br>
+
+<span th:if="${passportIsNotNull==true}">
+    <h3>Passport details</h3>
+  <form action="/addPassport" method="post" th:object="${currentUserPassport}">
+<input name="userId" th:value="${userId}" type="hidden">
+  <label>Passport number:</label>
+    <input name="seriaNumber" placeholder="seriaNumber" th:field="*{seriaNumber}"
+           th:placeholder="${currentUser.passportId.seriaNumber}" type="text">
+    <br>
+    <br>
+     <label>Date of Birth:</label>
+  <input name="dateOfBirth" th:placeholder="${currentUser.passportId.dateOfBirth}"
+         th:value="${currentUserPassport.dateOfBirth}"
+         type="text">
+     <br>
+    <br>
+     <label>Place of Birth:</label>
+  <input name="registration" placeholder="registration" th:field="*{registration}"
+         th:placeholder="${currentUser.passportId.registration}" type="text">
+ <br>
+    <br>
+  <input type="submit" value="Change passport details">
+</form>
+
+</span>
+
+<span th:unless="${passportIsNotNull==true}">
+<form action="/addPassport" method="post" th:object="${currentUserPassport}">
+<input name="userId" th:value="${userId}" type="hidden">
+  <input name="seriaNumber" placeholder="seriaNumber" th:field="*{seriaNumber}" type="text">
+    <br>
+    <br>
+
+  <input name="dateOfBirth" placeholder="dateOfBirth" th:field="*{dateOfBirth}" type="text">
+    <br>
+    <br>
+  <input name="registration" placeholder="registration" th:field="*{registration}" type="text">
+    <br>
+    <br>
+
+  <input type="submit" value="Add passport">
+
+</form>
+  </span>
+<br>
+<br>
+<a href="personalCabinet">back to personal cabinet</a>
+</body>
+</html>

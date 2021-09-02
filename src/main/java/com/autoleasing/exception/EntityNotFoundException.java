@@ -1,11 +1,11 @@
 package com.autoleasing.exception;
 
-public class EntityNotFoundException extends  Exception{
+public class EntityNotFoundException extends Exception {
 
     private String message;
 
     public EntityNotFoundException(String message) {
-        this.message= message;
+        this.message = message;
     }
 
     @Override

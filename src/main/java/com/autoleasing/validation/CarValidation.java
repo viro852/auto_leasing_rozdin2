@@ -14,17 +14,13 @@ public class CarValidation {
             throw new ValidationException("Object Car is null");
         }
 
-        if (isNull(carDto.getId()) || carDto.getId() <= 0) {
-            throw new ValidationException("Non valid id");
-        }
-
         if (isNull(carDto.getBrand()) || carDto.getBrand().isEmpty()) {
             throw new ValidationException("Brand is empty");
         }
         if (isNull(carDto.getModel()) || carDto.getModel().isEmpty()) {
             throw new ValidationException("Model is empty");
         }
-        if (isNull(carDto.getRentalPrice()) || carDto.getRentalPrice()<=0) { // можно ли так проверить на пустоту числовое поле?
+        if (isNull(carDto.getRentalPrice()) || carDto.getRentalPrice() <= 0) { // можно ли так проверить на пустоту числовое поле?
             throw new ValidationException("Price is empty");
         }
         if (isNull(carDto.getColor()) || carDto.getColor().isEmpty()) {

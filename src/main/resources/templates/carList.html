@@ -38,7 +38,24 @@
         </tr>
     </th:block>
 </table>
+<td>
+    <span th:if="${admin==true}">
+        <form action="/createCar" method="post" th:object="${carForSave}">
 
+                    <input name="brand" placeholder="brand" th:field="*{brand}" type="text">
+            <input name="model" placeholder="model" th:field="*{model}" type="text">
+               <input name="color" placeholder="color" th:field="*{color}" type="text">
+            <input name="price" placeholder="rentalPrice" th:field="*{rentalPrice}" type="text">
+
+                    <input type="submit" value="Create car">
+                </form>
+
+    </span>
+
+
+</td>
+
+<span th:text="${message}"></span>
 
 </body>
 </html>

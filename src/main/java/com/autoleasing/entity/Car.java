@@ -39,7 +39,7 @@ public class Car {
         this.available = available;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 

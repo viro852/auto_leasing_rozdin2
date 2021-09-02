@@ -13,21 +13,21 @@ public class OrderValidation {
         if (isNull(orderDto)) {
             throw new ValidationException("Order is null");
         }
-        if (isNull(orderDto.getCar())){
+        if (isNull(orderDto.getCar())) {
             throw new ValidationException("Car is empty");
         }
-        if (isNull(orderDto.getUser())){
+        if (isNull(orderDto.getUser())) {
             throw new ValidationException("User is empty");
         }
-        if (isNull(orderDto.getDateOfRent())){
+        if (isNull(orderDto.getDateOfRent())) {
             throw new ValidationException("Start Date of order is empty");
         }
 
-        if (isNull(orderDto.getDateOfRentFinish())){
+        if (isNull(orderDto.getDateOfRentFinish())) {
             throw new ValidationException("Finish Date of order is empty");
         }
 
-        if (isNull(orderDto.getOrderStatus())){
+        if (isNull(orderDto.getOrderStatus())) {
             throw new ValidationException("OrderStatus is empty");
         }
     }
