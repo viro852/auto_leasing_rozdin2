@@ -5,7 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Welcome to your personal cabinet <span th:text="${userEmail}"></span> !</h1>
+
+    <h1>Welcome to your personal cabinet <span th:text="${userEmail}"></span> !</h1>
+
 <td>
     <span th:if="${admin == true}">
         <a href="/orderList">all users orders</a>

@@ -3,6 +3,7 @@ package com.autoleasing.services;
 import com.autoleasing.dto.CarDto;
 import com.autoleasing.entity.Car;
 import com.autoleasing.exception.EntityNotFoundException;
+import com.autoleasing.exception.FileIsNotUploadedException;
 import com.autoleasing.exception.ValidationException;
 import com.autoleasing.repository.CarRepo;
 import com.autoleasing.validation.CarIdValidation;
@@ -31,7 +32,7 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public CarDto saveNewCar(CarDto carDto) throws ValidationException {
+    public CarDto saveNewCar(CarDto carDto) throws ValidationException{
         carDto.setAvailable(true);
         carValidation.validateCarDto(carDto);
         Car carForSave = carRepo.save(carConverter.fromCarDtoToCar(carDto));
@@ -58,7 +59,7 @@ public class CarServiceImpl implements CarService {
         carFromDB.setModel(carDto.getModel());
         carFromDB.setColor(carDto.getColor());
         carFromDB.setRentalPrice(carDto.getRentalPrice());
-        carFromDB.setAvailable(carDto.isAvailable());
+        carFromDB.setAvailable(carDto.getAvailable());
 
         return carConverter.fromCarToCarDto(carRepo.save(carFromDB));
     }

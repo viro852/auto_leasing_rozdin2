@@ -15,17 +15,21 @@ public class CarDto {
     @NotBlank
     private String color;
 
+    private String photos;
+
     private Integer rentalPrice;
+
     private Boolean available;
 
     public CarDto() {
     }
 
-    public CarDto(Integer id, String brand, String model, String color, Integer rentalPrice, Boolean available) {
+    public CarDto(Integer id, String brand, String model, String color, String photos, Integer rentalPrice, Boolean available) {
         this.id = id;
         this.brand = brand;
         this.model = model;
         this.color = color;
+        this.photos = photos;
         this.rentalPrice = rentalPrice;
         this.available = available;
     }
@@ -70,12 +74,20 @@ public class CarDto {
         this.rentalPrice = rentalPrice;
     }
 
-    public Boolean isAvailable() {
+    public Boolean getAvailable() {
         return available;
     }
 
     public void setAvailable(Boolean available) {
         this.available = available;
+    }
+
+    public String getPhotos() {
+        return photos;
+    }
+
+    public void setPhotos(String photos) {
+        this.photos = photos;
     }
 
     @Override
@@ -85,6 +97,7 @@ public class CarDto {
                 ", brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +
+                ", photos='" + photos + '\'' +
                 ", rentalPrice=" + rentalPrice +
                 ", available=" + available +
                 '}';

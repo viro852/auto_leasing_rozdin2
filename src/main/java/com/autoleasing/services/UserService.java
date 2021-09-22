@@ -5,6 +5,7 @@ import com.autoleasing.entity.Passport;
 import com.autoleasing.entity.User;
 import com.autoleasing.exception.EntityNotFoundException;
 import com.autoleasing.exception.ValidationException;
+import org.springframework.web.multipart.MultipartFile;
 
 public interface UserService {
 
@@ -17,5 +18,4 @@ public interface UserService {
     User checkUserByEmailAndPhoneNumber(String email, String phoneNumber);
 
     void saveUsersPassport(Passport passport);
-
 }

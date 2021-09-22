@@ -16,11 +16,15 @@
         <input name="carId" th:value="${car}" type="hidden"/>
 
         <input name="userId" th:value="${user}" type="hidden"/>
-
-        <input name="start" placeholder="StartDateOfRent" th:field="*{start}" type="text"/>
-
-        <input name="finish" placeholder="FinishDateOfRent" th:field="*{finish}" type="text"/>
-
+        <br>
+        <br>
+        <label>Date of start</label>
+        <input name="start" placeholder="StartDateOfRent" th:field="*{start}" type="date"/>
+        <br>
+        <label>Date of finish</label>
+        <input name="finish" placeholder="FinishDateOfRent" th:field="*{finish}" type="date"/>
+        <br>
+        <br>
         <input name="comment" placeholder="your commentary" th:field="*{comment}" type="text"/>
 
         <br>

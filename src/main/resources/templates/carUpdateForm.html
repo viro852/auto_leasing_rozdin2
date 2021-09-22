@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/css/project.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="testbox">
+    <h1>Close Order</h1>
+
+    <form action="/updateCar" method="post" th:object="${car}">
+        <input name="brand"  th:field="*{brand}" type="hidden">
+        <br>
+        <br>
+        <input name="model"  th:field="*{id}" type="hidden">
+        <br>
+        <br>
+        <input name="model"  th:field="*{model}" type="hidden">
+        <br>
+        <br>
+        <label>Enter new color</label>
+        <input name="color" placeholder="color" th:field="*{color}" type="text">
+        <br>
+        <br>
+        <label>Enter new price</label>
+        <input name="price" placeholder="rentalPrice" th:field="*{rentalPrice}" type="text">
+        <br>
+        <br>
+        <input name="available" th:field="*{available}" type="hidden">
+        <br>
+        <br>
+        <input type="submit" value="Update">
+    </form>
+</div>
+</body>
+</html>

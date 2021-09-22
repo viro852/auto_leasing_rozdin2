@@ -1,5 +1,7 @@
 package com.autoleasing.dto;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.time.LocalDate;
 
 public class CreateOrderRequest {
@@ -7,7 +9,9 @@ public class CreateOrderRequest {
     private Integer userId;
     private Integer carId;
     private String comment;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     private LocalDate start;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     private LocalDate finish;
 
     public Integer getUserId() {

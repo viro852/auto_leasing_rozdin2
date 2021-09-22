@@ -14,6 +14,7 @@
 <table>
 
     <tr>
+        <th></th>
         <th>Brand</th>
         <th>Model</th>
         <th>Color</th>
@@ -23,11 +24,15 @@
 
     <th:block th:each="car:${carList}">
         <tr>
+            <td>
+                <img th:src="@{${car.photoPath}}" style="width: 50px; height: 50px">
+            </td>
             <td th:text="${car.brand}"></td>
             <td th:text="${car.model}"></td>
             <td th:text="${car.color}"></td>
             <td th:text="${car.rentalPrice}"></td>
             <td th:text="${car.available}"></td>
+            <span th:unless="${admin==true}">
             <td>
                 <form action="/newOrderForm" method="get">
 
@@ -35,27 +40,45 @@
                     <input type="submit" value="Order">
                 </form>
             </td>
+            </span>
+            <span th:if="${admin==true}">
+            <td>
+                <form action="/updateCarForm" method="get">
+
+                    <input name="carId" th:value="${car.id}" type="hidden">
+                    <input type="submit" value="update">
+                </form>
+            </td>
+            </span>
         </tr>
     </th:block>
 </table>
 <td>
     <span th:if="${admin==true}">
-        <form action="/createCar" method="post" th:object="${carForSave}">
+        <form action="/createCar" method="post" th:object="${carForSave}" enctype="multipart/form-data">
 
                     <input name="brand" placeholder="brand" th:field="*{brand}" type="text">
+            <br>
+            <br>
             <input name="model" placeholder="model" th:field="*{model}" type="text">
-               <input name="color" placeholder="color" th:field="*{color}" type="text">
+            <br>
+            <br>
+            <input name="color" placeholder="color" th:field="*{color}" type="text">
+            <br>
+            <br>
             <input name="price" placeholder="rentalPrice" th:field="*{rentalPrice}" type="text">
-
+            <br>
+            <br>
+<label>Car photos: </label>
+            <br>
+    <input type="file" name="image" accept="image/png, image/jpeg"/>
                     <input type="submit" value="Create car">
                 </form>
 
     </span>
-
+    <p th:text="${message1}"></p>
 
 </td>
-
-<span th:text="${message}"></span>
 
 </body>
 </html>

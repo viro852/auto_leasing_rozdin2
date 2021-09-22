@@ -1,6 +1,9 @@
 package com.autoleasing.entity;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -16,6 +19,7 @@ public class Passport {
     @Column(name = "seria_number")
     private String seriaNumber;
 
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
 

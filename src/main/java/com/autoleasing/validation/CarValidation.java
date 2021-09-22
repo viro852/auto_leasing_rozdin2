@@ -1,6 +1,7 @@
 package com.autoleasing.validation;
 
 import com.autoleasing.dto.CarDto;
+import com.autoleasing.exception.FileIsNotUploadedException;
 import com.autoleasing.exception.ValidationException;
 import org.springframework.stereotype.Component;
 
@@ -25,9 +26,6 @@ public class CarValidation {
         }
         if (isNull(carDto.getColor()) || carDto.getColor().isEmpty()) {
             throw new ValidationException("Color is empty");
-        }
-        if (isNull(carDto.isAvailable())) { // пока в раздумьях как проверить на пустоту
-            throw new ValidationException("Available  is empty");
         }
     }
 }

@@ -18,17 +18,20 @@
 
 <span th:if="${passportIsNotNull==true}">
     <h3>Passport details</h3>
+
+
   <form action="/addPassport" method="post" th:object="${currentUserPassport}">
-<input name="userId" th:value="${userId}" type="hidden">
+<input type="hidden" th:field="*{id}" name="id">
   <label>Passport number:</label>
     <input name="seriaNumber" placeholder="seriaNumber" th:field="*{seriaNumber}"
            th:placeholder="${currentUser.passportId.seriaNumber}" type="text">
     <br>
     <br>
      <label>Date of Birth:</label>
-  <input name="dateOfBirth" th:placeholder="${currentUser.passportId.dateOfBirth}"
-         th:value="${currentUserPassport.dateOfBirth}"
-         type="text">
+  <input name="dateOfBirth" th:placeholder="${currentUser.passportId.dateOfBirth}" th:field="*{dateOfBirth}"
+         type="date">
+
+
      <br>
     <br>
      <label>Place of Birth:</label>
@@ -42,13 +45,13 @@
 </span>
 
 <span th:unless="${passportIsNotNull==true}">
-<form action="/addPassport" method="post" th:object="${currentUserPassport}">
-<input name="userId" th:value="${userId}" type="hidden">
+<form action="/addPassport" method="post" th:object="${newUserPassport}">
+<input name="userId" th:value="${currentUser.id}" type="hidden">
   <input name="seriaNumber" placeholder="seriaNumber" th:field="*{seriaNumber}" type="text">
     <br>
     <br>
 
-  <input name="dateOfBirth" placeholder="dateOfBirth" th:field="*{dateOfBirth}" type="text">
+  <input name="dateOfBirth" placeholder="dateOfBirth" th:field="*{dateOfBirth}" type="date">
     <br>
     <br>
   <input name="registration" placeholder="registration" th:field="*{registration}" type="text">
@@ -61,6 +64,16 @@
   </span>
 <br>
 <br>
-<a href="personalCabinet">back to personal cabinet</a>
+<form method="post" action="/personalCabinet" th:object="${currentUser}">
+    <input type="hidden" th:field="*{id}">
+    <input type="hidden" th:field="*{passportId}">
+    <input type="hidden" th:field="*{password}">
+    <input type="hidden" th:field="*{phoneNumber}">
+    <input type="hidden" th:field="*{email}">
+    <input type="hidden" th:field="*{lastName}">
+    <input type="hidden" th:field="*{phoneNumber}">
+
+    <input type="submit" value="Back to personal cabinet">
+</form>
 </body>
 </html>

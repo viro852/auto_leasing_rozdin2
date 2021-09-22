@@ -7,17 +7,25 @@ import com.autoleasing.entity.Order;
 import com.autoleasing.entity.User;
 import com.autoleasing.enums.OrderStatus;
 import com.autoleasing.exception.EntityNotFoundException;
+import com.autoleasing.exception.FileIsNotUploadedException;
 import com.autoleasing.exception.ValidationException;
 import com.autoleasing.repository.OrderRepo;
+import com.autoleasing.utils.FileUploadUtil;
 import com.autoleasing.validation.CarIdValidation;
 import com.autoleasing.validation.OrderIdValidation;
 import com.autoleasing.validation.OrderValidation;
 import com.autoleasing.validation.UserIdValidation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.mail.MessagingException;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
+
 
 @Service
 public class OrderServiceImpl implements OrderService {
@@ -33,6 +41,8 @@ public class OrderServiceImpl implements OrderService {
     private final OrderIdValidation orderIdValidation;
     private final OrderConverter orderConverter;
     private final SendEmailService sendEmailService;
+    @Value("${upload.path.carcondition}")
+    private String carConditionPath;
 
 
     @Autowired
@@ -56,14 +66,17 @@ public class OrderServiceImpl implements OrderService {
 
 
         User user = usersConverter.fromUserDtoToUser(userService.getUserById(userId));
+        CarDto carDto = carService.getCarById(carId);
 
-        Car car = carConverter.fromCarDtoToCar(carService.getCarById(carId));
 
         Order order = new Order();
 
-        if (car.isAvailable()) {
-            car.setAvailable(true);
+        if (carDto.getAvailable()) {
+            carDto.setAvailable(Boolean.FALSE);
         }
+        carService.updateCar(carDto);
+
+        Car car = carConverter.fromCarDtoToCar(carDto);
 
         order.setUser(user);
         order.setCar(car);
@@ -93,13 +106,15 @@ public class OrderServiceImpl implements OrderService {
                 sendEmailService.sendEmail(orderFromDB.getUser().getEmail(), "Статус Вашей заявки на аренду автомобиля: " + orderFromDB.getOrderStatus() + " Причина: " + orderFromDB.getAdminCommentary(), "Your order is declined");
                 break;
             case SUCCESS:
+                CarDto carDto = carConverter.fromCarToCarDto(orderDto.getCar());
+                carDto.setAvailable(Boolean.TRUE);
+                carService.updateCar(carDto);
                 sendEmailService.sendEmail(orderFromDB.getUser().getEmail(), "Вы успешно сдали автомобиль: " + orderFromDB.getOrderStatus(), "Your order is successfully closed");
                 break;
             case FAIL:
                 sendEmailService.sendEmail(orderFromDB.getUser().getEmail(), "Статус Вашей заявки на аренду автомобиля: " + orderFromDB.getOrderStatus() + " Причина: " + orderFromDB.getAdminCommentary(), "Your order cant be closed");
                 break;
             case ENDREQUEST:
-                sendEmailService.sendEmail(sendEmailService.getAdminEmail(), "Клиент пытается закончить аренду, пожалуйста проверьте состояние автомобиля: " + orderFromDB.getAdminCommentary(), "attempt to end rent from user");
                 break;
         }
     }
@@ -129,6 +144,23 @@ public class OrderServiceImpl implements OrderService {
         List<Order> activeOrderList = orderRepo.findAllByOrderStatus(orderStatus);
         return activeOrderList;
     }
+
+    @Override
+    public void endOfRent(MultipartFile multipartFile, Integer orderId) throws ValidationException, EntityNotFoundException, IOException, MessagingException, FileIsNotUploadedException {
+        Order orderForEnd=orderRepo.findById(orderId).orElseThrow(()->{ return new EntityNotFoundException("Entity not found");});
+        orderForEnd.setOrderStatus(OrderStatus.ENDREQUEST);
+        OrderDto orderForEndDto=orderConverter.fromOrderToOrderDto(orderForEnd);
+
+        String fileName = multipartFile.getOriginalFilename();
+        String uploadDir = carConditionPath + orderId;
+        String fileabsolutePath = carConditionPath + orderId + "//" + fileName;
+
+        FileUploadUtil.saveFile(uploadDir, fileName, multipartFile);
+
+        updateOrder(orderForEndDto);
+        sendEmailService.sendEmailWithAttachment("Attempt to end order " + orderForEndDto.getId() + " Пожалуйста, проверьте состояние автомобиля перед присвоением нового статуса", " End order request", fileabsolutePath);
+    }
 }
+
 
 
