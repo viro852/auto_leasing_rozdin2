@@ -10,6 +10,7 @@ import com.autoleasing.entity.Role;
 import com.autoleasing.enums.OrderStatus;
 import com.autoleasing.enums.RoleEnum;
 import com.autoleasing.exception.EntityNotFoundException;
+import com.autoleasing.exception.FileIsNotUploadedException;
 import com.autoleasing.exception.ValidationException;
 import com.autoleasing.services.*;
 import org.slf4j.Logger;
@@ -21,33 +22,35 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.mail.MessagingException;
+import java.io.IOException;
 import java.util.List;
 
 @Controller
 public class OrderController {
 
-    private final SendEmailService sendEmailService;
     private final Logger logger = LoggerFactory.getLogger(OrderController.class);
     private final UserComponent userComponent;
     private final CarService carService;
     private final CarConverter carConverter;
     private final OrderService orderService;
-    private final OrderConverter orderConverter;
+    private final UsersConverter usersConverter;
 
     @Autowired
-    public OrderController(UserComponent userComponent, CarService carService, CarConverter carConverter, OrderService orderService, SendEmailService sendEmailService, OrderConverter orderConverter) {
+    public OrderController(UserComponent userComponent, CarService carService, CarConverter carConverter, OrderService orderService, UsersConverter usersConverter) {
         this.userComponent = userComponent;
         this.carService = carService;
         this.carConverter = carConverter;
         this.orderService = orderService;
-        this.sendEmailService = sendEmailService;
-        this.orderConverter = orderConverter;
+        this.usersConverter = usersConverter;
     }
 
     @GetMapping("/orderList")
     public String orderList(Model model) {
         model.addAttribute("orderList", orderService.getAllOrderList());
+        model.addAttribute("currentUser",usersConverter.fromUserToUserDto(userComponent.getUser()));
         Role admin = userComponent.getUser().getSetOfRoles().stream().filter(elem -> elem.getRoleEnum().equals(RoleEnum.ADMIN)).findAny().orElseGet(() -> {
             return new Role();
         });
@@ -59,19 +62,23 @@ public class OrderController {
     }
 
     @GetMapping("/newOrderForm")
-    public String newOrderForm(@RequestParam("carId") String carId, Model model) {
-
+    public String newOrderForm(@RequestParam("carId") Integer carId, Model model) {
         logger.info("attempt to book car with id:" + carId);
-
-        Integer carIdFromView = Integer.parseInt(carId);
 
         Car car = null;
         try {
-            car = carConverter.fromCarDtoToCar(carService.getCarById(carIdFromView));
+            car = carConverter.fromCarDtoToCar(carService.getCarById(carId));
         } catch (EntityNotFoundException e) {
-            e.printStackTrace();
+            logger.error("We have error: " + e.getMessage());
+            model.addAttribute("reason","Auto is unavilable now");
+            return "errorPage";
         } catch (ValidationException e) {
-            e.printStackTrace();
+            logger.error("We have error: " + e.getMessage());
+            return "errorPage";
+        }
+
+        if (!car.getAvailable()) {
+            return "errorWhenCarIsUnavailable";
         }
 
         CreateOrderRequest createOrderRequest = new CreateOrderRequest();
@@ -90,7 +97,7 @@ public class OrderController {
         try {
             orderService.bookACar(orderRequest.getCarId(), orderRequest.getUserId(), orderRequest.getComment(), orderRequest.getStart(), orderRequest.getFinish());
         } catch (EntityNotFoundException e) {
-            e.printStackTrace();
+            logger.error("We have error: " + e.getMessage());
         } catch (ValidationException e) {
             model.addAttribute(orderRequest.getCarId());
             return "errorWhenSaveNewOrder";
@@ -100,9 +107,12 @@ public class OrderController {
         try {
             carDto = carService.getCarById(orderRequest.getCarId());
         } catch (EntityNotFoundException e) {
-            e.printStackTrace();
+            logger.error("We have error: " + e.getMessage());
+            model.addAttribute("reason","Auto is unavilable now");
+            return "errorPage";
         } catch (ValidationException e) {
-            e.printStackTrace();
+            logger.error("We have error: " + e.getMessage());
+            return "errorPage";
         }
 
         model.addAttribute("bookedCarBrand", carDto.getBrand());
@@ -114,8 +124,7 @@ public class OrderController {
     }
 
     @PostMapping("/acceptOrder")
-    public String acceptOrder(@RequestParam("orderId") int orderId) throws ValidationException, EntityNotFoundException {
-
+    public String acceptOrder(@RequestParam("orderId") Integer orderId) throws ValidationException, EntityNotFoundException {
         OrderDto orderToUpdate = orderService.getOrderById(orderId);
         orderToUpdate.setOrderStatus(OrderStatus.ACCEPTED);
         orderService.updateOrder(orderToUpdate);
@@ -123,7 +132,7 @@ public class OrderController {
     }
 
     @PostMapping("/declineOrder")
-    public String declineOrder(@RequestParam("orderIdForDecline") int orderIdForDecline, @RequestParam(name = "declineCommentary") String declineCommentary) throws ValidationException, EntityNotFoundException {
+    public String declineOrder(@RequestParam("orderIdForDecline") Integer orderIdForDecline, @RequestParam(name = "declineCommentary") String declineCommentary) throws ValidationException, EntityNotFoundException {
         OrderDto orderToDecline = orderService.getOrderById(orderIdForDecline);
         orderToDecline.setAdminCommentary(declineCommentary);
         orderToDecline.setOrderStatus(OrderStatus.DECLINED);
@@ -132,7 +141,8 @@ public class OrderController {
     }
 
     @GetMapping("/declineOrder")
-    public String getDeclineOrderPage(@RequestParam("orderIdForDecline") int orderIdForDecline, Model model) throws ValidationException, EntityNotFoundException {
+    public String getDeclineOrderPage(@RequestParam("orderIdForDecline") Integer orderIdForDecline, Model model) throws ValidationException, EntityNotFoundException {
+        logger.info("attempt to decline order with id: " + orderIdForDecline);
         model.addAttribute("orderIdForDecline", orderIdForDecline);
         return "declineOrderPage";
     }
@@ -145,7 +155,8 @@ public class OrderController {
     }
 
     @GetMapping("/closeOrderForm")
-    public String getCloseOrderForm(@RequestParam(name = "orderId") int orderId, Model model) {
+    public String getCloseOrderForm(@RequestParam(name = "orderId") Integer orderId, Model model) {
+        logger.info("attempt to close order with id: " + orderId);
         model.addAttribute("orderToBeClosed", orderId);
         return "closeOrderForm";
     }
@@ -164,14 +175,28 @@ public class OrderController {
         return "redirect:/activeOrders";
     }
 
-    @PostMapping("/endOfRent")
-    public String attemptToEndRent(@RequestParam(name = "orderId") int orderId) throws ValidationException, EntityNotFoundException {
-        OrderDto order = orderService.getOrderById(orderId);
-        order.setOrderStatus(OrderStatus.ENDREQUEST);
-        orderService.updateOrder(order);
-
-
-        return "redirect:/orderList";
+    @GetMapping("/endOfRentForm")
+    public String getEndRentForm(@RequestParam(name = "orderId") Integer orderId, Model model) throws ValidationException, EntityNotFoundException {
+        logger.info("attempt to end order with id: " + orderId);
+        model.addAttribute("orderId", orderId);
+        return "endOfRentForm";
     }
 
+    @PostMapping("/endOfRent")
+    public String attemptToEndRent(@RequestParam(name = "orderId") Integer orderId, @RequestParam(name = "image") MultipartFile multipartFile, Model model) throws ValidationException, EntityNotFoundException {
+        try {
+            orderService.endOfRent(multipartFile,orderId);
+        } catch (IOException e) {
+            logger.error("We have error: " + e.getMessage() + ".User redirected to orderList page");
+            return "redirect:/orderList";
+        } catch (MessagingException e) {
+            logger.error("We have error: " + e.getMessage() + ".User redirected to orderList page");
+            return "redirect:/orderList";
+        } catch (FileIsNotUploadedException e) {
+            model.addAttribute("orderId", orderId);
+            logger.error("We have error: " + e.getMessage() + ".User redirected to errorWhenFileIsNotUploaded page");
+            return "errorWhenFileIsNotUploaded";
+        }
+        return "redirect:/orderList";
+    }
 }

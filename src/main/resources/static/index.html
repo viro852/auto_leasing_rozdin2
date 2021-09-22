@@ -1,33 +1,147 @@
 <!DOCTYPE html>
-<html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="/css/project.css" rel="stylesheet">
 </head>
 <body>
 
-<h2>List of car</h2>
+<h1>Ajax test</h1>
+<table id="carList">
 
-
-<table>
-    <tr>
-        <th>Brand</th>
-        <th>Model</th>
-        <th>Color</th>
-        <th>Rental price</th>
-        <th>Available</th>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><input type="button" value="Book now"></td>
-    </tr>
 </table>
-<a href="/authentification">login</a>
+
+<table id="carById">
+
+</table>
+
+
+<form action="#">
+    <input id="car_color" placeholder="color">
+    <input id="car_price" placeholder="price">
+    <input id="car_brand" placeholder="brand">
+    <input id="car_model" placeholder="model">
+    <button onclick="createCar()">Create Car</button>
+</form>
+
+
+<form action="#">
+
+
+    <input id="car_colorr" placeholder="color">
+    <input id="car_pricee" placeholder="price">
+    <input id="car_brandd" placeholder="brand">
+    <input id="car_modell" placeholder="model">
+
+</form>
+
+<input id="search_field" placeholder="enter id">
+<button onclick="searchById()">Search by id</button>
+
+
+<script>
+
+    function searchById() {
+        var carId = document.getElementById("search_field").value;
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4) {
+                var car = JSON.parse(request.responseText);
+                var html = '<tr>\n' +
+                    '        <th>Car id</th>\n' +
+                    '        <th>brand</th>\n' +
+                    '        <th>model</th>\n' +
+                    '        <th>color</th>\n' +
+                    '        <th>rentalPrice</th>\n' +
+                    '    </tr>';
+                html = html + '<tr><td>' + car.id + '</td>\n' +
+                    '        <td>' + car.brand + '</td>\n' +
+                    '        <td>' + car.model + '</td>\n' +
+                    '        <td>' + car.color + '</td>' +
+                    '        <td>' + car.rentalPrice + '</td>'+
+                    '        <td><button onclick="modifyCar(' + car.id + ')">Modify</button></td></tr>';
+                document.getElementById("carList").innerHTML = html;
+            }
+        };
+        request.open("GET","http://localhost:8080/api/cars/" + carId,true);
+        request.send();
+    }
+
+    function modifyCar(carId) {
+        var carId = carId;
+        var carColor = document.getElementById("car_colorr").value;
+        var carPrice = document.getElementById("car_pricee").value;
+        var carBrand = document.getElementById("car_brandd").value;
+        var carModel = document.getElementById("car_modell").value;
+
+
+        var request = new XMLHttpRequest();
+        request.open("PUT", "http://localhost:8080/api/cars");
+        request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        request.send(JSON.stringify({
+            id: carId,
+            color: carColor,
+            rentalPrice: carPrice,
+            brand: carBrand,
+            model: carModel
+        }));
+
+        request.onreadystatechange = function () {
+            if (request.readyState == 4) {
+                loadCars();
+            }
+        };
+    }
+
+
+    function createCar() {
+        var carBrand = document.getElementById("car_brand").value;
+        var carModel = document.getElementById("car_model").value;
+        var carColor = document.getElementById("car_color").value;
+        var carPrice = document.getElementById("car_price").value;
+
+        var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance
+        xmlhttp.open("POST", "http://localhost:8080/api/cars");
+        xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xmlhttp.send(JSON.stringify({brand: carBrand, model: carModel, color: carColor, rentalPrice: carPrice}));
+
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+                loadCars();
+            }
+        };
+    }
+
+    function loadCars() {
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4) {
+                var cars = JSON.parse(request.responseText);
+                var html = '<tr>\n' +
+                    '        <th>Car id</th>\n' +
+                    '        <th>brand</th>\n' +
+                    '        <th>model</th>\n' +
+                    '        <th>color</th>\n' +
+                    '        <th>rentalPrice</th>\n' +
+                    '    </tr>';
+                for (var i = 0; i < cars.length; i++) {
+                    var car = cars[i];
+                    html = html + '<tr><td>' + car.id + '</td>\n' +
+                        '        <td>' + car.brand + '</td>\n' +
+                        '        <td>' + car.model + '</td>\n' +
+                        '        <td>' + car.color + '</td>' +
+                        '        <td>' + car.rentalPrice + '</td>' +
+                        '        <td><button onclick="modifyCar(' + car.id + ')">Modify</button></td></tr>';
+
+                }
+                document.getElementById("carList").innerHTML = html;
+            }
+        };
+        request.open("GET", "http://localhost:8080/api/cars", true)
+        request.send();
+    }
+
+    loadCars()
+</script>
 
 </body>
 </html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>For the end  of the car rental,please add a photo of the current condition of the car</p>
+<br>
+<br>
+<form action="/endOfRent" method="post" enctype="multipart/form-data" >
+    <input name="orderId" th:value="${orderId}" type="hidden">
+    <input type="file" name="image" accept="image/png, image/jpeg"/>
+    <br>
+    <br>
+    <input type="submit" value="End order">
+</form>
+</body>
+</html>

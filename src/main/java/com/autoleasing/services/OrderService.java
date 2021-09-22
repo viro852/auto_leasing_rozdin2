@@ -5,8 +5,13 @@ import com.autoleasing.entity.Order;
 import com.autoleasing.entity.User;
 import com.autoleasing.enums.OrderStatus;
 import com.autoleasing.exception.EntityNotFoundException;
+import com.autoleasing.exception.FileIsNotUploadedException;
 import com.autoleasing.exception.ValidationException;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.mail.MessagingException;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -24,5 +29,5 @@ public interface OrderService {
 
     List<Order> findAllByOrderStatus(OrderStatus orderStatus);
 
-
+    void endOfRent(MultipartFile fileFromView, Integer orderId) throws ValidationException, EntityNotFoundException, IOException, MessagingException, FileIsNotUploadedException;
 }

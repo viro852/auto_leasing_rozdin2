@@ -24,7 +24,7 @@ public class UserDto {
     private String password;
     private Set<Role> setOfRoles;
     private String phoneNumber;
-    private Passport passport;
+    private Passport passportId;
 
     public UserDto() {
     }
@@ -37,7 +37,7 @@ public class UserDto {
         this.password = password;
         this.setOfRoles = setOfRoles;
         this.phoneNumber = phoneNumber;
-        this.passport = passport;
+        this.passportId = passportId;
     }
 
     public Integer getId() {
@@ -96,12 +96,12 @@ public class UserDto {
         this.phoneNumber = phoneNumber;
     }
 
-    public Passport getPassport() {
-        return passport;
+    public Passport getPassportId() {
+        return passportId;
     }
 
     public void setPassport(Passport passport) {
-        this.passport = passport;
+        this.passportId = passport;
     }
 
     @Override
@@ -114,7 +114,7 @@ public class UserDto {
                 ", password='" + password + '\'' +
                 ", setOfRoles=" + setOfRoles +
                 ", phoneNumber='" + phoneNumber + '\'' +
-                ", passport=" + passport +
+                ", passport=" + passportId +
                 '}';
     }
 }

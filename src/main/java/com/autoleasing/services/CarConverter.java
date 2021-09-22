@@ -17,7 +17,8 @@ public class CarConverter {
         car.setId(carDto.getId());
         car.setColor(carDto.getColor());
         car.setRentalPrice(carDto.getRentalPrice());
-        car.setAvailable(carDto.isAvailable());
+        car.setAvailable(carDto.getAvailable());
+        car.setPhotos(carDto.getPhotos());
         return car;
     }
 
@@ -28,7 +29,8 @@ public class CarConverter {
         carDto.setId(car.getId());
         carDto.setColor(car.getColor());
         carDto.setRentalPrice(car.getRentalPrice());
-        carDto.setAvailable(car.isAvailable());
+        carDto.setAvailable(car.getAvailable());
+        carDto.setPhotos(car.getPhotos());
         return carDto;
     }
 }

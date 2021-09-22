@@ -7,19 +7,24 @@ import com.autoleasing.entity.Role;
 import com.autoleasing.entity.User;
 import com.autoleasing.enums.RoleEnum;
 import com.autoleasing.exception.EntityNotFoundException;
+import com.autoleasing.exception.FileIsNotUploadedException;
 import com.autoleasing.exception.ValidationException;
 import com.autoleasing.services.UserService;
 import com.autoleasing.services.UsersConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import javax.naming.Binding;
 import javax.validation.Valid;
 import java.util.HashSet;
 
@@ -37,7 +42,6 @@ public class UserController {
         this.userComponent = userComponent;
         this.userService = userService;
         this.usersConverter = usersConverter;
-
     }
 
     @GetMapping("/registration")
@@ -48,10 +52,10 @@ public class UserController {
 
     @GetMapping("/personalInfo")
     public String personalInfoPage(Model model) {
-        User currentUser = userComponent.getUser();
+        UserDto currentUser = usersConverter.fromUserToUserDto(userComponent.getUser());
         model.addAttribute("currentUser", currentUser);
-        model.addAttribute("userId", currentUser.getId());
-        model.addAttribute("currentUserPassport", new Passport());
+        model.addAttribute("newUserPassport", new Passport());
+        model.addAttribute("currentUserPassport", currentUser.getPassportId());
         model.addAttribute("passportIsNotNull", currentUser.getPassportId() != null);
         return "personalInfo";
     }
@@ -61,7 +65,6 @@ public class UserController {
         userService.saveUsersPassport(passport);
         return "redirect:/personalInfo";
     }
-
 
     @PostMapping("/registration")
     public String register(@Valid @ModelAttribute("user") UserDto userDto, Errors errors) {
@@ -82,7 +85,8 @@ public class UserController {
                 userService.saveNewUser(userDto);
 
             } catch (ValidationException e) {
-                e.getMessage();
+                logger.error("We have error: " + e.getMessage() + ".User redirected to error page");
+                return "errorPage";
             }
             return "/authentification";
         } else {

@@ -16,7 +16,7 @@ public class UsersConverter {
         user.setPassword(userDto.getPassword());
         user.setSetOfRoles(userDto.getSetOfRoles());
         user.setPhoneNumber(userDto.getPhoneNumber());
-        user.setPassportId(userDto.getPassport());
+        user.setPassportId(userDto.getPassportId());
         return user;
     }
 

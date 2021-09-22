@@ -200,3 +200,30 @@ a.button:hover {
     box-shadow: none;
 
 }
+
+button {
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em 2em;
+
+// Using inset box-shadow instead of border for sizing simplicity
+
+
+    font-size: inherit;
+    font-weight: 700;
+
+// Required, since we're setting absolute on pseudo-elements
+position: relative;
+    vertical-align: middle;
+
+     box-sizing: inherit;
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+ }
+
+
+
